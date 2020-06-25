@@ -1,22 +1,46 @@
 import React from "react"
 import { Link } from "gatsby"
+import About from "../components/about"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import logo from "../images/TMLogoCircle.png"
+import logowhite from "../images/TMLogoCircleWhite.png"
 
-const IndexPage = () => (
+class IndexPage extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      showTitle: true,
+      showBio: "disappear",
+    }
+    // MDCRipple.attachTo(document.querySelector('.my-surface'));
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 200;
+      console.log(!isTop);
+
+        this.setState({
+          showBio: isTop ? "disappear" : "appear"
+        })
+
+    });
+  }
+
+
+  render(){
+    return (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Tejas Mehta" />
+    {/*<About show={this.state.showBio}/>*/}
   </Layout>
 )
 
+}
+
+}
 export default IndexPage
