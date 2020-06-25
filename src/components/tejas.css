@@ -123,7 +123,6 @@ body{
 #hippl{
     backgroundColor: "black";
     border-radius: 20px;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: all .5s ease;
@@ -290,10 +289,17 @@ a.ripple{
     .navLinks{
         display: none;
     }
+    #hippl{
+        width: 90%;
+    }
+
 }
 
 @media screen and (orientation: landscape){
     #mobileNav{
         display: none;
+    }
+    #hippl{
+        width: 50%;
     }
 }
