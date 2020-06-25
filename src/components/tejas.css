@@ -11,6 +11,10 @@ html,body {
     -webkit-tap-highlight-color: transparent;
 }
 
+:root{
+    --MainThemeColor: #1a237e;
+}
+
 .mainHeader{
     background-color: transparent;
     position: fixed;
@@ -21,7 +25,7 @@ html,body {
 }
 
 .mainHeaderColor{
-    background-color: #1a237e;
+    background-color: var(--MainThemeColor);
     position: fixed;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
