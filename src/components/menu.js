@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledMenu } from './Menu.styled';
+import { StyledMenu } from './menu.styled';
 import { bool } from "prop-types"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
