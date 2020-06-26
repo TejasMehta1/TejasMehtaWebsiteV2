@@ -20,8 +20,16 @@ class Attributes extends React.Component {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const showTitle = window.scrollY < 200;
-      const showBio = window.scrollY >= 200 && window.scrollY < 440
+      let showTitle;
+      let showBio;
+      if (window.innerHeight < window.innerWidth) {
+         showTitle = window.scrollY < 200;
+         showBio = window.scrollY >= 200 && window.scrollY < 450
+      }
+      else{
+         showTitle = window.scrollY < 200;
+         showBio = window.scrollY >= 200 && window.scrollY < 600
+      }
 
       this.setState({
         showTitle: showTitle,
