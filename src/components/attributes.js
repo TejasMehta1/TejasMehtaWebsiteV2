@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import logo from "../images/TMLogoCircle.png"
 import logowhite from "../images/TMLogoCircleWhite.png"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import Skills from "./skills"
 
 class Attributes extends React.Component {
 
@@ -51,6 +52,7 @@ class Attributes extends React.Component {
             className="material-icons downArrow">keyboard_arrow_down</i></AnchorLink>
         </h1>
         <About show={this.state.showBio ? "appear" : "disappear"}/>
+        <Skills/>
       </React.Fragment>
     );
 

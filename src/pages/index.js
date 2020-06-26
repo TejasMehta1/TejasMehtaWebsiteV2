@@ -7,7 +7,6 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import logo from "../images/TMLogoCircle.png"
 import logowhite from "../images/TMLogoCircleWhite.png"
-
 class IndexPage extends React.Component {
 
   constructor() {

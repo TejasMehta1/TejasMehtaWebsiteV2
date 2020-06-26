@@ -12,7 +12,7 @@ const About = ({show}) => {
   return(
     <React.Fragment>
     <div id="aboutLocation"></div>
-    <div className={show} id="hippl">
+    <div className={show + " dynamicContainer"} id="hippl">
       <div style={{marginLeft:"auto", marginRight:"auto", maxWidth: "160px"}}>
       <img id="profilePic" src={ProfilePic}/>
       </div>

@@ -46,7 +46,7 @@ html,body {
 
 }
 .headerPictureContainer{
-    height: 200vh;
+    height: 1000vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -114,10 +114,7 @@ html,body {
     /*left: 50%;*/
 }
 
-#aboutLocation{
-    position: absolute;
-    top: 300px;
-}
+
 
 .hi{
 
@@ -142,6 +139,46 @@ html,body {
     margin-top: 0px;
 }
 
+.quicksand{
+    font-family: Quicksand, sans-serif;
+}
+
+figcaption.codingLanguage{
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+    margin-right: auto;
+    margin-left: auto;
+    /*text-shadow: 2px 2px 1px #000,*/
+    /*-2px -2px 1px #000,*/
+    /*-2px 2px 1px #000,*/
+    /*2px -2px 1px #000;*/
+    /*-webkit-text-stroke-color: black;*/
+    padding: 10px 10px;
+    font-weight: 900;
+    border-radius: 25px;
+}
+
+figure.codingLanguage{
+    margin: 0;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+    width: 20%;
+    margin-right: 5%;
+}
+img.codingLanguage{
+}
+.dynamicContainer{
+    margin-left: auto;
+    color: white;
+    margin-right: auto;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
 .appear{
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -163,6 +200,18 @@ html,body {
     border-radius: 20px;
 }
 
+br.clear{
+    clear: both;
+}
+hr.skillLine{
+    margin-top: 30px;
+    color: white;
+    height: 3px;
+    border-radius: 100px;
+    width: 100%;
+    clear: both;
+    background-color: white;
+}
 
 .downArrow:hover{
     color: lightblue;
@@ -299,8 +348,15 @@ a.ripple{
     .navLinks{
         display: none;
     }
-    #hippl{
+    .dynamicContainer{
         width: 90%;
+    }
+    #aboutLocation{
+        position: absolute;
+        top: 450px;
+    }
+    figcaption.codingLanguage{
+        width: 100%;
     }
 
 }
@@ -309,7 +365,15 @@ a.ripple{
     #mobileNav{
         display: none;
     }
-    #hippl{
+    .dynamicContainer{
         width: 50%;
+    }
+    figcaption.codingLanguage{
+        width: 7em;
+    }
+
+    #aboutLocation{
+        position: absolute;
+        top: 300px;
     }
 }
