@@ -18,19 +18,19 @@ html,body {
 .mainHeader{
     background-color: transparent;
     position: fixed;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 
 .mainHeaderColor{
     background-color: var(--MainThemeColor);
     position: fixed;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 #profilePic{
     width: 100%;
@@ -132,10 +132,10 @@ html,body {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
     margin-top: 0px;
 }
 
@@ -173,25 +173,25 @@ img.codingLanguage{
     margin-left: auto;
     color: white;
     margin-right: auto;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 
 .appear{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 
 .disappear{
     opacity: 0;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 
 .bioCard{
@@ -283,21 +283,40 @@ a.ripple{
     border-radius: 15px;
     padding: 1px 4px;
     margin: 0px 2px;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
 }
 
 .textLink:hover{
     color: white;
     background-color: darkblue;
-    -webkit-transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
 
 }
+
+.frontEnd.appear img, .frontEnd.appear figcaption{
+    animation: crescendo .6s alternate ease-in;
+}
+
+.backEnd.appear img, .backEnd.appear figcaption{
+    animation: crescendo .6s alternate ease-in;
+}
+
+.deploymentDB.appear img, .deploymentDB.appear figcaption{
+    animation: crescendo .6s alternate ease-in;
+}
+
+@keyframes crescendo {
+    0%   {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .mainHeader, .mainHeaderColor{
@@ -348,6 +367,7 @@ a.ripple{
     .navLinks{
         display: none;
     }
+
     .dynamicContainer{
         width: 90%;
     }
@@ -357,6 +377,11 @@ a.ripple{
     }
     figcaption.codingLanguage{
         width: 100%;
+        font-size: 80%;
+    }
+    figure.codingLanguage{
+        margin-right: 2%;
+        width: 23%;
     }
 
 }
@@ -365,8 +390,15 @@ a.ripple{
     #mobileNav{
         display: none;
     }
-    .dynamicContainer{
-        width: 50%;
+    @media screen and (max-width: 1050px){
+        .dynamicContainer{
+            width: 70%;
+        }
+    }
+    @media screen and (min-width: 1051px) {
+        .dynamicContainer {
+            width: 50%;
+        }
     }
     figcaption.codingLanguage{
         width: 7em;

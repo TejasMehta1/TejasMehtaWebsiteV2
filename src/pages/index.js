@@ -21,8 +21,6 @@ class IndexPage extends React.Component {
   componentDidMount() {
     document.addEventListener('scroll', () => {
       const isTop = window.scrollY < 200;
-      console.log(!isTop);
-
         this.setState({
           showBio: isTop ? "disappear" : "appear"
         })

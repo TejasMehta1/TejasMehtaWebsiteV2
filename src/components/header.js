@@ -28,7 +28,6 @@ class Header extends React.Component {
       else{
         isTop = window.scrollY < 500;
       }
-      console.log(isTop);
       if (isTop !== this.state.isTop) {
         this.setState({
           isTop: isTop,
@@ -40,6 +39,7 @@ class Header extends React.Component {
     });
   }
   render() {
+
     return(
       <header className={this.state.headerClass}
       >
@@ -59,9 +59,10 @@ class Header extends React.Component {
               TEJAS MEHTA
             </Link>
             <div className="navLinks">
-              <AnchorLink id="aboutNavLink" className="ripple" href="#aboutLocation">About </AnchorLink>
+              <AnchorLink offset="250" id="aboutNavLink" className="ripple" href="#profilePic">About </AnchorLink>
               <AnchorLink className="ripple" href="#hippl">Work </AnchorLink>
               <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
+              <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
               <AnchorLink className="ripple" href="#hippl">Resume</AnchorLink>
               <AnchorLink className="ripple" href="#aboutLocation">Contact</AnchorLink>
             </div>

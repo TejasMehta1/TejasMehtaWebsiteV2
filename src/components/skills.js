@@ -14,15 +14,17 @@ import GCPPic from "../images/gcp.svg"
 import PostgreSQLPic from "../images/postgresql.png"
 import FirebasePic from "../images/firebase.svg"
 import DockerPic from "../images/docker.svg"
-const Skills = () => {
+import PropTypes from "prop-types"
+import About from "./about"
+const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB}) => {
 
   return(
     <React.Fragment>
-      <div style={{marginTop: "40px"}} className={"dynamicContainer"}>
-        <h1 className={"quicksand"}>Technical Skills:</h1>
-        <hr className={"skillLine"}/>
-      <h2 className={"quicksand"}>Front End</h2>
-        <div>
+      <div id="skillsLocation" style={{marginTop: "40px"}} className={"dynamicContainer"}>
+        <h1 className={"quicksand " + showFrontEnd}>Technical Skills:</h1>
+        <hr className={"skillLine " + showFrontEnd}/>
+      <h2 className={"quicksand frontEnd " + showFrontEnd} id={"frontEndTitle"}>Front End</h2>
+        <div className={"frontEnd " + showFrontEnd}>
           <figure className={"codingLanguage"}>
             <img alt={"React"} className={"codingLanguage"} src={ReactPic}/>
             <figcaption className={"codingLanguage"}>React</figcaption>
@@ -40,11 +42,11 @@ const Skills = () => {
             <figcaption className={"codingLanguage"}>Flutter</figcaption>
           </figure>
           <br className={"clear"}/>
-          <hr className={"skillLine"}/>
+          <hr className={"skillLine"} id={"frontEndSkillLine"}/>
         </div>
 
-      <h2 className={"quicksand"}>Back End</h2>
-      <div>
+      <h2 className={"quicksand backEnd " + showBackEnd} id={"backEndTitle"}>Back End</h2>
+      <div className={"backEnd " + showBackEnd}>
         <figure className={"codingLanguage"}>
         <img alt={"Python"} className={"codingLanguage"} src={PythonPic}/>
         <figcaption className={"codingLanguage"}>Python</figcaption>
@@ -62,10 +64,10 @@ const Skills = () => {
           <figcaption className={"codingLanguage"}>Pytorch</figcaption>
         </figure>
         <br className={"clear"}/>
-        <hr className={"skillLine"}/>
+        <hr className={"skillLine"} id={"backEndSkillLine"}/>
       </div>
-      <h2 className={"quicksand"}>Deployment+Databases</h2>
-        <div>
+      <h2 className={"quicksand deploymentDB " + showDeploymentDB} id={"deploymentDBTitle"}>Deployment+Databases</h2>
+        <div className={"deploymentDB " + showDeploymentDB}>
           <figure className={"codingLanguage"}>
             <img alt={"Google Cloud Platform"} className={"codingLanguage"} src={GCPPic}/>
             <figcaption className={"codingLanguage"}>GCP</figcaption>
@@ -76,15 +78,24 @@ const Skills = () => {
           </figure>
           <figure className={"codingLanguage"}>
             <img alt={"PostgreSQL SQL"} className={"codingLanguage"} src={PostgreSQLPic}/>
-            <figcaption className={"codingLanguage"}>PostgreSQL</figcaption>
+            <figcaption className={"codingLanguage"}>SQL</figcaption>
           </figure>
           <figure className={"codingLanguage"}>
             <img alt={"Firebase"} className={"codingLanguage"} src={FirebasePic}/>
             <figcaption className={"codingLanguage"}>Firebase</figcaption>
           </figure>
+          <hr style={{backgroundColor: "transparent"}} className={"skillLine"} id={"deploymentDBSkillLine"}/>
+
         </div>
       </div>
     </React.Fragment>
   )
 }
+
+Skills.propTypes = {
+  showFrontEnd: PropTypes.string.isRequired,
+  showBackEnd: PropTypes.string.isRequired,
+  showDeploymentDB: PropTypes.string.isRequired,
+}
+
 export default Skills
