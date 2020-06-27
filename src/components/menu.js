@@ -3,8 +3,15 @@ import { StyledMenu } from './menu.styled';
 import { bool } from "prop-types"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
+
+
 const Menu = ({ open }) => {
-  let bioOffset = (Math.pow(window.innerHeight, 2))/(Math.pow(10, 3)) * 0.3 - 25
+  function getWinHeight(){
+      return window.innerHeight;
+  }
+  let innerWindowHeight = 400;
+  innerWindowHeight = getWinHeight();
+  let bioOffset = (Math.pow(innerWindowHeight, 2))/(Math.pow(10, 3)) * 0.3 - 25
   return (
     <StyledMenu open={open}>
       {/*<a href="/">*/}
