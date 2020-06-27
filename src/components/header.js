@@ -21,7 +21,7 @@ class Header extends React.Component {
   }
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      let isTop = window.scrollY;
+      let isTop = false;
       if (window.innerHeight < window.innerWidth) {
         isTop = window.scrollY < 800;
       }
