@@ -159,7 +159,7 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
     margin-top: 0px;
-    overflow: visible;
+
 }
 
 .quicksand{
@@ -207,7 +207,7 @@ img.codingLanguage{
     -moz-transition: opacity .5s ease;
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
-    overflow-x: hidden;
+
 }
 
 .disappear{
@@ -216,7 +216,7 @@ img.codingLanguage{
     -moz-transition: opacity .5s ease;
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
-    overflow-x: hidden;
+
 }
 
 .bioCard{
@@ -340,7 +340,7 @@ a.ripple{
 }
 
 .HomeDepotDiv{
-    height: 35vh;
+
     border-radius: 4px;
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
@@ -355,7 +355,7 @@ a.ripple{
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 5px 5px, 0px 0px;
-    height: 35vh;
+
     border-radius: 4px;
     -webkit-transition: all 1s ease-out .7s;
     -moz-transition: all 1s ease-out .7s;
@@ -366,7 +366,7 @@ a.ripple{
 
 
 .JobDescription{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .WorkDiv{
@@ -374,19 +374,9 @@ a.ripple{
     /*margin-left: auto;*/
     /*margin-right: auto;*/
 }
-.WorkImageDiv{
-    float: left;
-    width: 40%;
-    height: 100%;
-    padding: 50px 30px 50px;
-}
 
 .WorkText{
-    float: right;
     color: white;
-    padding: 30px;
-    text-align: right;
-    width: 60%;
 }
 
 .WorkText h1, h2, h3{
@@ -402,7 +392,6 @@ a.ripple{
 .WorkPicture{
     height: 100%;
     border-radius: 40%;
-
 }
 .WorkPicture:hover{
     border-radius: 20px;
@@ -481,6 +470,47 @@ a.ripple{
 }
 
 @media screen and (orientation: portrait){
+    .WorkImageDiv{
+        margin-right: auto;
+        height: 30%;
+        width: 50%;
+        margin-left: auto;
+    }
+
+    .WorkPicture{
+        width: 100%;
+        margin-top: 7.5px;
+    }
+
+    .WorkText{
+        padding: 15px;
+    }
+
+
+
+    .WorkText h1{
+        font-size: 1.5em;
+    }
+    .WorkText h3{
+        font-size: 1em;
+    }
+
+
+
+    .centerButtonMobile{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .WorkText button{
+        text-align: center;
+        width: 100%;
+    }
+    .HomeDepotDiv, .ZimperiumDiv {
+        height: 350px;
+    }
+
     .navLinks{
         display: none;
     }
@@ -493,7 +523,7 @@ a.ripple{
     }
     .disappear .ZimperiumDiv{
         transform: translate(calc(111%),0px);
-        overflow: hidden;
+
 
     }
     #aboutLocation{
@@ -524,7 +554,7 @@ a.ripple{
         }
         .disappear .ZimperiumDiv{
             transform: translate(calc(142%),0px);
-            overflow: hidden;
+
         }
     }
     @media screen and (min-width: 1051px) {
@@ -533,7 +563,6 @@ a.ripple{
         }
         .disappear .ZimperiumDiv{
             transform: translate(calc(200%),0px);
-            overflow: hidden;
         }
         .disappear .HomeDepotDiv{
             transform: translate(calc(-200%),0px);
@@ -546,5 +575,23 @@ a.ripple{
     #aboutLocation{
         position: absolute;
         top: 300px;
+    }
+    .WorkImageDiv{
+        float: left;
+        width: 40%;
+        height: 100%;
+        padding: 50px 30px 50px;
+    }
+
+    .WorkText{
+        float: right;
+        color: white;
+        padding: 30px;
+        text-align: right;
+        width: 60%;
+    }
+
+    .HomeDepotDiv, .ZimperiumDiv {
+        height: 325px;
     }
 }

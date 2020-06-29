@@ -13,7 +13,7 @@ const Work = ({show}) => {
 
   return(
     <React.Fragment>
-      <div className={show}>
+      <div style={{overflow: "hidden"}} className={show}>
       <h1 id="workExperience" className={"dynamicContainer"}>Work Experience: </h1>
       <div style={{backgroundImage: `url(${OrangeWood})`}} className="HomeDepotDiv WorkDiv dynamicContainer">
         <div className={"WorkImageDiv"}>
@@ -23,7 +23,9 @@ const Work = ({show}) => {
         <h1>Software Engineering Intern</h1>
         <h3> June 2020 - August 2020</h3>
         <h3 className={"JobDescription"}>Self Checkout</h3>
+        <div className={"centerButtonMobile"}>
         <button className="ripple buttonWhite">Project</button>
+        </div>
         {/*<ul style={{textAlign: "left"}}>*/}
         {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}
         {/*<li>Designed for The Home Depot's Pro Customers to select previously used job addresses to promote ease of use and minimize errors</li>*/}
@@ -39,7 +41,9 @@ const Work = ({show}) => {
           <h1>Software Engineering Intern</h1>
           <h3> June 2019 - August 2019</h3>
           <h3 className={"JobDescription"}>ZCrystalball</h3>
+          <div className={"centerButtonMobile"}>
           <button className="ripple buttonWhite">Project</button>
+          </div>
           {/*<ul style={{textAlign: "left"}}>*/}
           {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}
           {/*<li>Designed for The Home Depot's Pro Customers to select previously used job addresses to promote ease of use and minimize errors</li>*/}

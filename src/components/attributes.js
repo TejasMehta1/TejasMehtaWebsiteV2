@@ -46,8 +46,8 @@ class Attributes extends React.Component {
       // if (window.innerHeight < window.innerWidth) {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
          showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("profilePic",50);
-         showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 50) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
-         showWork = this.showItemBasedOnBottomDistance("workExperience", 275) && this.showItemBasedOnTopDistance("skillsLocation", 200);
+      showWork = this.showItemBasedOnBottomDistance("workExperience", 500) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+         showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
         // console.log(document.getElementById("backEndTitle").getBoundingClientRect().top);

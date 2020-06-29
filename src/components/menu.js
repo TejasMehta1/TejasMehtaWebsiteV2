@@ -18,12 +18,12 @@ const Menu = ({ open }) => {
       {/*  <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>*/}
       {/*  About us*/}
       {/*</a>*/}
-      <AnchorLink offset={bioOffset} className="ripple mobileNavLink" href="#profilePic">About</AnchorLink>
-      <AnchorLink className="ripple mobileNavLink" href="#hippl">Work </AnchorLink>
-      <AnchorLink className="ripple mobileNavLink" href="#hippl">Projects</AnchorLink>
-      <AnchorLink offset='150' className="ripple mobileNavLink" href="#skillsLocation">Skills</AnchorLink>
-      <AnchorLink className="ripple mobileNavLink" href="#hippl">Resume</AnchorLink>
-      <AnchorLink className="ripple mobileNavLink" href="#hippl">Contact</AnchorLink>
+      <AnchorLink offset="250" id="aboutNavLink" className="ripple" href="#profilePic">About </AnchorLink>
+      <AnchorLink offset="150" id="workNavLink" className="ripple" href="#workExperience">Work </AnchorLink>
+      <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
+      <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
+      <AnchorLink className="ripple" href="#hippl">Resume</AnchorLink>
+      <AnchorLink className="ripple" href="#aboutLocation">Contact</AnchorLink>
     </StyledMenu>
   )
 }
