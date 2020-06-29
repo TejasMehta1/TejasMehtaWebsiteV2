@@ -11,13 +11,31 @@ html,body {
     -webkit-tap-highlight-color: transparent;
 }
 
+
+
 :root{
     --MainThemeColor: #1a237e;
+}
+
+.mainHeader h1 h2 h3 h4 h5 h6{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContainer, h5.dynamicContainer, h6.dynamicContainer{
+    font-family: Quicksand, sans-serif !important;
 }
 
 .mainHeader{
     background-color: transparent;
     position: fixed;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.transitionFade{
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -74,6 +92,10 @@ html,body {
     margin-right: 40px;
     margin-left: 0%;
     margin-top: 10px;
+}
+
+.whiteLogo:hover{
+    border-radius: 40px;
 }
 
 .navLinks{
@@ -137,6 +159,7 @@ html,body {
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
     margin-top: 0px;
+    overflow: visible;
 }
 
 .quicksand{
@@ -184,6 +207,7 @@ img.codingLanguage{
     -moz-transition: opacity .5s ease;
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
+    overflow-x: hidden;
 }
 
 .disappear{
@@ -192,6 +216,7 @@ img.codingLanguage{
     -moz-transition: opacity .5s ease;
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
+    overflow-x: hidden;
 }
 
 .bioCard{
@@ -242,6 +267,21 @@ hr.skillLine{
     box-shadow: 0 0 4px #999;
     outline: none;
 }
+
+.buttonWhite {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    /*box-shadow: 0 0 4px #999;*/
+    outline: none;
+}
+
 
 a.ripple{
     border: none;
@@ -299,6 +339,83 @@ a.ripple{
 
 }
 
+.HomeDepotDiv{
+    height: 35vh;
+    border-radius: 4px;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+
+
+.ZimperiumDiv{
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    height: 35vh;
+    border-radius: 4px;
+    -webkit-transition: all 1s ease-out .7s;
+    -moz-transition: all 1s ease-out .7s;
+    -o-transition: all 1s ease-out .7s;
+    transition: all 1s ease-out .7s;
+}
+
+
+
+.JobDescription{
+    font-weight: 300;
+}
+
+.WorkDiv{
+    /*width: 80%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+.WorkImageDiv{
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding: 50px 30px 50px;
+}
+
+.WorkText{
+    float: right;
+    color: white;
+    padding: 30px;
+    text-align: right;
+    width: 60%;
+}
+
+.WorkText h1, h2, h3{
+    font-family: Quicksand, sans-serif;
+}
+
+.WorkText p{
+    font-size: 1em;
+    margin-bottom: 2px;
+}
+
+
+.WorkPicture{
+    height: 100%;
+    border-radius: 40%;
+
+}
+.WorkPicture:hover{
+    border-radius: 20px;
+}
+
+
+
+
+.InvertColors:hover{
+    -webkit-filter: invert(100%) grayscale(100%);
+    filter: invert(100%) grayscale(100%);
+    background-color: black;
+}
 .frontEnd.appear img, .frontEnd.appear figcaption{
     animation: crescendo .6s alternate ease-in;
 }
@@ -371,6 +488,14 @@ a.ripple{
     .dynamicContainer{
         width: 90%;
     }
+    .disappear .HomeDepotDiv{
+        transform: translate(calc(-111%),0px);
+    }
+    .disappear .ZimperiumDiv{
+        transform: translate(calc(111%),0px);
+        overflow: hidden;
+
+    }
     #aboutLocation{
         position: absolute;
         top: 450px;
@@ -394,10 +519,24 @@ a.ripple{
         .dynamicContainer{
             width: 70%;
         }
+        .disappear .HomeDepotDiv{
+            transform: translate(calc(-142%),0px);
+        }
+        .disappear .ZimperiumDiv{
+            transform: translate(calc(142%),0px);
+            overflow: hidden;
+        }
     }
     @media screen and (min-width: 1051px) {
         .dynamicContainer {
             width: 50%;
+        }
+        .disappear .ZimperiumDiv{
+            transform: translate(calc(200%),0px);
+            overflow: hidden;
+        }
+        .disappear .HomeDepotDiv{
+            transform: translate(calc(-200%),0px);
         }
     }
     figcaption.codingLanguage{

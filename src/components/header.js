@@ -47,7 +47,7 @@ class Header extends React.Component {
         >
           <a
             href="#mainTitle"
-          ><img className={this.state.logoClass} src={this.state.image}></img></a>
+          ><img className={this.state.logoClass + " transitionFade InvertColors"} src={this.state.image}></img></a>
           <h1 id="headerTitle" className='mainTitle'>
             <Link
               to="/"
@@ -60,7 +60,7 @@ class Header extends React.Component {
             </Link>
             <div className="navLinks">
               <AnchorLink offset="250" id="aboutNavLink" className="ripple" href="#profilePic">About </AnchorLink>
-              <AnchorLink className="ripple" href="#hippl">Work </AnchorLink>
+              <AnchorLink offset="150" id="workNavLink" className="ripple" href="#workExperience">Work </AnchorLink>
               <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
               <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
               <AnchorLink className="ripple" href="#hippl">Resume</AnchorLink>
