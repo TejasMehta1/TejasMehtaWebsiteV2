@@ -8,6 +8,7 @@ import logowhite from "../images/TMLogoCircleWhite.png"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Skills from "./skills"
 import Work from "./work"
+import Resume from "./resume"
 
 class Attributes extends React.Component {
 
@@ -20,6 +21,7 @@ class Attributes extends React.Component {
       showBackEnd: false,
       showDeploymentDB: false,
       showWork: false,
+      showResume: false,
     }
     // MDCRipple.attachTo(document.querySelector('.my-surface'));
   }
@@ -43,13 +45,15 @@ class Attributes extends React.Component {
       let showBackEnd;
       let showDeploymentDB;
       let showWork;
+      let showResume;
       // if (window.innerHeight < window.innerWidth) {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
          showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("profilePic",50);
-      showWork = this.showItemBasedOnBottomDistance("workExperience", 500) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
+        showResume = this.showItemBasedOnBottomDistance("resumeTitle" , 350)
         // console.log(document.getElementById("backEndTitle").getBoundingClientRect().top);
       // }
       // else{
@@ -67,14 +71,17 @@ class Attributes extends React.Component {
         showFrontEnd: showFrontEnd,
         showBackEnd: showBackEnd,
         showDeploymentDB: showDeploymentDB,
-        showWork: showWork
+        showWork: showWork,
+        showResume: showResume,
       })
       let aboutNavLink =  document.getElementById("aboutNavLink");
       showBio ? aboutNavLink.style.color = "lightblue" : aboutNavLink.style.color = "white";
-      let skillsNavLink = document.getElementById("skillsNavLink");
       let workNavLink = document.getElementById("workNavLink")
-        showWork ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
-      (showFrontEnd || showDeploymentDB) ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
+      showWork && !(showFrontEnd || showDeploymentDB) ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
+      let skillsNavLink = document.getElementById("skillsNavLink");
+      (showFrontEnd || showDeploymentDB) && !showResume ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
+      let resumeNavLink = document.getElementById("resumeNavLink");
+      (showResume) ? resumeNavLink.style.color = "lightblue" : resumeNavLink.style.color = "white";
     });
   }
 
@@ -91,6 +98,7 @@ class Attributes extends React.Component {
         <About show={this.state.showBio ? "appear" : "disappear"}/>
         <Work show={this.state.showWork ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
+        <Resume show={this.state.showResume ? "appear" : "disappear"}/>
       </React.Fragment>
     );
 

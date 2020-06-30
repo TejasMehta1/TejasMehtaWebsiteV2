@@ -26,6 +26,15 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
     font-family: Quicksand, sans-serif !important;
 }
 
+.dynamicContainer h1, .dynamicContainer h2, .dynamicContainer h3, .dynamicContainer h4, .dynamicContainer h5, .dynamicContainer h6{
+    font-family: Quicksand, sans-serif !important;
+}
+
+.resumeFrame{
+    width: 100%;
+    height: 1150px;
+}
+
 .mainHeader{
     background-color: transparent;
     position: fixed;
@@ -282,6 +291,9 @@ hr.skillLine{
     outline: none;
 }
 
+.buttonWhite:hover{
+    color: white;
+}
 
 a.ripple{
     border: none;
