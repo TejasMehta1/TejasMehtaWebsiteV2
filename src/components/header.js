@@ -47,7 +47,7 @@ class Header extends React.Component {
         >
           <a
             href="#mainTitle"
-          ><img className={this.state.logoClass + " transitionFade InvertColors"} src={this.state.image}></img></a>
+          ><img alt="TejasMehtaLogo" className={this.state.logoClass + " transitionFade InvertColors"} src={this.state.image}></img></a>
           <h1 id="headerTitle" className='mainTitle'>
             <Link
               to="/"

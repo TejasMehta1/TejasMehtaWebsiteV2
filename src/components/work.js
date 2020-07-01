@@ -17,7 +17,7 @@ const Work = ({show, zimpShow, HDShow}) => {
       <h1 id="workExperience" className={"dynamicContainer"}>Work Experience: </h1>
       <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"HomeDepotDiv WorkDiv dynamicContainer " + HDShow}>
         <div className={"WorkImageDiv"}>
-      <a target="_blank" href="https://www.homedepot.com/"><img className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>
+      <a target="_blank" href="https://www.homedepot.com/" aria-label="homedepot.com"><img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>
         </div>
       <div className="WorkText">
         <h1>Software Engineering Intern</h1>
@@ -35,7 +35,7 @@ const Work = ({show, zimpShow, HDShow}) => {
       <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
       <div id="zimperiumDivTransition" className={"ZimperiumDiv WorkDiv dynamicContainer " + zimpShow}>
         <div className={"WorkImageDiv"}>
-          <a target="_blank" href="https://zimperium.com"><img className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/></a>
+          <a target="_blank" href="https://zimperium.com" aria-label="zimperium.com"><img alt="Zimperium" className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/></a>
         </div>
         <div className="WorkText">
           <h1>Software Engineering Intern</h1>

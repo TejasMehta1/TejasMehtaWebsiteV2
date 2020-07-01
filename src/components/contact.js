@@ -89,7 +89,7 @@ const Contact = ({show}) => {
       <div id={"ContactUs"} style={{overflow: "hidden", marginTop: "150px"}} className={show + " dynamicContainer"}>
         <div>
           <Card style={{padding: "50px", textAlign: "center"}}>
-        <h1 style={{fontWeight: 600}} id={"resumeTitle"}>Let's Get in Touch!</h1>
+        <h1 style={{fontWeight: 600}} id={"contactTitle"}>Let's Get in Touch!</h1>
             <hr className={"smallBlueHR"}/>
         <p>You've gotten to know me, now let me get to know you!</p>
             <div className={"contactInputDiv dynamicContainer"}>

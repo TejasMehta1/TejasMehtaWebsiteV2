@@ -14,7 +14,7 @@ const About = ({show}) => {
     <div id="aboutLocation"></div>
     <div className={show + " dynamicContainer"} id="hippl">
       <div style={{marginLeft:"auto", marginRight:"auto", maxWidth: "160px"}}>
-      <img id="profilePic" src={ProfilePic}/>
+      <img alt="TejasMehtaProfilePic" id="profilePic" src={ProfilePic}/>
       </div>
       <Card className="bioCard">
         <p>Hi, I'm a<a className="textLink" target="_blank" href="https://csb.utexas.edu"><b>Texas CSB Honors</b> </a>  student at UT Austin majoring in <b>Computer Science, Management, and Business Honors</b> and pursuing an <b>Applied Statistical Modeling</b> certificate.
