@@ -9,6 +9,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Skills from "./skills"
 import Work from "./work"
 import Resume from "./resume"
+import Contact from "./contact"
 
 class Attributes extends React.Component {
 
@@ -99,6 +100,7 @@ class Attributes extends React.Component {
         <Work show={this.state.showWork ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <Resume show={this.state.showResume ? "appear" : "disappear"}/>
+        <Contact show={true}/>
       </React.Fragment>
     );
 

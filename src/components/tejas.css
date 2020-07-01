@@ -17,6 +17,10 @@ html,body {
     --MainThemeColor: #1a237e;
 }
 
+.materialIcon{
+
+}
+
 .mainHeader h1 h2 h3 h4 h5 h6{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -266,7 +270,7 @@ hr.skillLine{
 }
 .buttonBlue {
     border: none;
-    border-radius: 2px;
+    border-radius: 30px;
     padding: 12px 18px;
     font-size: 16px;
     text-transform: uppercase;
@@ -277,9 +281,12 @@ hr.skillLine{
     outline: none;
 }
 
+.buttonBlue:hover{
+    background-color: var(--MainThemeColor);
+}
+
 .buttonWhite {
     border: none;
-    border-radius: 2px;
     padding: 12px 18px;
     font-size: 16px;
     text-transform: uppercase;
@@ -408,10 +415,15 @@ a.ripple{
 .WorkPicture:hover{
     border-radius: 20px;
 }
+.react-pdf__Page__canvas{
+    width: 100%!important;
+    height: auto!important;
+}
 
 
-
-
+.react-pdf__Page {
+    display: flex!important;
+    justify-content: center!important; }
 .InvertColors:hover{
     -webkit-filter: invert(100%) grayscale(100%);
     filter: invert(100%) grayscale(100%);
@@ -434,7 +446,52 @@ a.ripple{
     100% {transform: scale(1);}
 }
 
+.FormControlContact{
+    border-radius: 40px!important;
+    padding-left: 10px;
+}
+.contactInputLabel{
+    padding-left: 10px!important;
+}
+.contactInputAdornment{
+    padding-right: 10px!important;
+}
 
+.contactInputDiv{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Quicksand, sans-serif!important;
+}
+
+.contactInputDiv > input{
+    font-family: Quicksand, sans-serif!important;
+}
+
+.MuiFormLabel-root, label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-outlined, .MuiInputBase-root, #outlined-adornment-name, #outlined-adornment-email, #outlined-adornment-message {
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+}
+
+.smallBlueHR{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4px;
+    border-radius: 20px;
+    background-color: var(--MainThemeColor)
+}
+
+.MainModal{
+    outline: 0;
+    margin: auto;
+    top: 40%!important;
+}
+
+.rootDivModal{
+    outline: 0;
+    text-align: center;
+}
 
 @media screen and (min-width: 1200px) {
     .mainHeader, .mainHeaderColor{
@@ -606,4 +663,59 @@ a.ripple{
     .HomeDepotDiv, .ZimperiumDiv {
         height: 325px;
     }
+}
+
+
+
+.Toaster__alert {
+    background-color: #FF6461;
+    overflow: hidden;
+    max-width: 650px;
+    position: relative;
+    border-radius: 0.4rem;
+    display: flex;
+    padding: 1rem;
+    padding-right: 48px;
+    box-shadow: rgba(52, 58, 64, 0.15) 0px 1px 10px 0px,
+    rgba(52, 58, 64, 0.1) 0px 6px 12px 0px,
+    rgba(52, 58, 64, 0.12) 0px 6px 15px -2px;
+}
+
+.Toaster__alert_text {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.Toaster__alert_close {
+    padding: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    border-radius: 0.4rem;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+}
+
+.Toaster__alert_close:focus {
+    box-shadow: rgba(52, 58, 64, 0.15) 0px 0px 0px 3px;
+}
+
+.Toaster__message-wrapper {
+    padding: 8px;
 }
