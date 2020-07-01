@@ -47,7 +47,7 @@ const Resume = ({show}) => {
         {/*>*/}
         {/*  <Page pageNumber={1} />*/}
         {/*</Document>  */}
-            <iframe id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>
+            <iframe title="Tejas Mehta Resume" id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>
         </div>
         </div>
       </div>

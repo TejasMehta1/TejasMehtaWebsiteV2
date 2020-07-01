@@ -5,7 +5,7 @@ import Menu from "./menu"
 
 const Burger = ({ open, isOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => isOpen(!open)}>
+    <StyledBurger aria-label="burger menu" open={open} onClick={() => isOpen(!open)}>
       <div />
       <div />
       <div />
