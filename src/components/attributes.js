@@ -23,6 +23,7 @@ class Attributes extends React.Component {
       showDeploymentDB: false,
       showWork: false,
       showResume: false,
+      showContact: false
     }
     // MDCRipple.attachTo(document.querySelector('.my-surface'));
   }
@@ -47,6 +48,7 @@ class Attributes extends React.Component {
       let showDeploymentDB;
       let showWork;
       let showResume;
+      let showContact;
       // if (window.innerHeight < window.innerWidth) {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
          showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("profilePic",50);
@@ -54,7 +56,8 @@ class Attributes extends React.Component {
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
-        showResume = this.showItemBasedOnBottomDistance("resumeTitle" , 350)
+        showResume = this.showItemBasedOnBottomDistance("resumeTitle" , 350) && this.showItemBasedOnTopDistance("TejasMehtaResume", -800);
+        showContact = this.showItemBasedOnBottomDistance("ContactUs" , 350)
         // console.log(document.getElementById("backEndTitle").getBoundingClientRect().top);
       // }
       // else{
@@ -74,6 +77,7 @@ class Attributes extends React.Component {
         showDeploymentDB: showDeploymentDB,
         showWork: showWork,
         showResume: showResume,
+        showContact: showContact
       })
       let aboutNavLink =  document.getElementById("aboutNavLink");
       showBio ? aboutNavLink.style.color = "lightblue" : aboutNavLink.style.color = "white";
@@ -82,7 +86,9 @@ class Attributes extends React.Component {
       let skillsNavLink = document.getElementById("skillsNavLink");
       (showFrontEnd || showDeploymentDB) && !showResume ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
       let resumeNavLink = document.getElementById("resumeNavLink");
-      (showResume) ? resumeNavLink.style.color = "lightblue" : resumeNavLink.style.color = "white";
+      (showResume) && !(showContact) ? resumeNavLink.style.color = "lightblue" : resumeNavLink.style.color = "white";
+      let contactNavLink = document.getElementById("contactNavLink");
+      (showContact) ? contactNavLink.style.color = "lightblue" : contactNavLink.style.color = "white";
     });
   }
 
@@ -100,7 +106,7 @@ class Attributes extends React.Component {
         <Work show={this.state.showWork ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <Resume show={this.state.showResume ? "appear" : "disappear"}/>
-        <Contact show={true}/>
+        <Contact show={this.state.showContact ? "appear" : "disappear"}/>
       </React.Fragment>
     );
 

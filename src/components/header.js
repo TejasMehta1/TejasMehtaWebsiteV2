@@ -64,7 +64,7 @@ class Header extends React.Component {
               <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
               <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
               <AnchorLink offset='150' id="resumeNavLink" className="ripple" href="#resumeTitle">Resume</AnchorLink>
-              <AnchorLink className="ripple" href="#aboutLocation">Contact</AnchorLink>
+              <AnchorLink offset='200' id="contactNavLink" className="ripple" href="#ContactUs">Contact</AnchorLink>
             </div>
           </h1>
           {/*<span className="clearLine"></span>*/}

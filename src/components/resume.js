@@ -38,13 +38,16 @@ const Resume = ({show}) => {
         {/*</iframe>*/}
         <br style={{clear: "both"}}/>
         <div style={{marginTop: "40px"}}>
+          <div id={"TejasMehtaResume"}>
         <Document
+
           file={TejasMehtaResume}
           renderAnnotations={true}
           onLoadSuccess={removeTextLayerOffset}
         >
           <Page pageNumber={1} />
         </Document>  {/*<iframe id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>*/}
+        </div>
         </div>
       </div>
     </React.Fragment>

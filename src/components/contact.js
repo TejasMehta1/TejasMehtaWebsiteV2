@@ -11,6 +11,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailOutline from '@material-ui/icons/MailOutline';
 import Fade from '@material-ui/core/Fade';
 import toast from 'toasted-notes';
+import emailjs from 'emailjs-com';
 import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
 import validator from "email-validator"
@@ -61,7 +62,18 @@ const Contact = ({show}) => {
         });
       }
       else{
+        let template_params = {
+          "reply_to": values.email,
+          "from_name": values.name,
+          "message_html": values.message
+        }
+
+        let service_id = "gmail";
+        let template_id = "iamtejasmehtaemail";
+        let user_id = "user_YfxEKrg45LOPTKCCDRM3X";
+        let sentEmail = emailjs.send(service_id, template_id, template_params, user_id);
         toggleModal(true);
+        console.log(sentEmail);
       }
     }
     else {
@@ -74,7 +86,7 @@ const Contact = ({show}) => {
 
   return(
     <React.Fragment>
-      <div style={{overflow: "hidden", marginTop: "150px"}} className={show + " dynamicContainer"}>
+      <div id={"ContactUs"} style={{overflow: "hidden", marginTop: "150px"}} className={show + " dynamicContainer"}>
         <div>
           <Card style={{padding: "50px", textAlign: "center"}}>
         <h1 style={{fontWeight: 600}} id={"resumeTitle"}>Let's Get in Touch!</h1>

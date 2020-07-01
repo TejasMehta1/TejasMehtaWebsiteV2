@@ -23,7 +23,8 @@ const Menu = ({ open }) => {
       <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
       <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
       <AnchorLink offset='150' id="resumeNavLink" className="ripple" href="#resumeTitle">Resume</AnchorLink>
-      <AnchorLink className="ripple" href="#aboutLocation">Contact</AnchorLink>
+      <AnchorLink offset='120' id="contactNavLink" className="ripple" href="#ContactUs">Contact</AnchorLink>
+
     </StyledMenu>
   )
 }
