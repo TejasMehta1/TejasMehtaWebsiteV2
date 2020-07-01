@@ -22,6 +22,7 @@ class Attributes extends React.Component {
       showBackEnd: false,
       showDeploymentDB: false,
       showWork: false,
+      showZimperium: false,
       showResume: false,
       showContact: false
     }
@@ -29,6 +30,9 @@ class Attributes extends React.Component {
   }
 
   showItemBasedOnBottomDistance(id, offset){
+    if (id == "zimperiumDivTransition"){
+      console.log(window.innerHeight + window.scrollY - document.getElementById(id).offsetTop);
+    }
     return window.innerHeight + window.scrollY - document.getElementById(id).offsetTop > offset;
   }
 
@@ -47,12 +51,16 @@ class Attributes extends React.Component {
       let showBackEnd;
       let showDeploymentDB;
       let showWork;
+      let showHD;
+      let showZimperium;
       let showResume;
       let showContact;
       // if (window.innerHeight < window.innerWidth) {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
          showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("profilePic",50);
       showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("skillsLocation", 20);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
@@ -76,6 +84,8 @@ class Attributes extends React.Component {
         showBackEnd: showBackEnd,
         showDeploymentDB: showDeploymentDB,
         showWork: showWork,
+        showHD: showHD,
+        showZimperium: showZimperium,
         showResume: showResume,
         showContact: showContact
       })
@@ -103,7 +113,7 @@ class Attributes extends React.Component {
             className="material-icons downArrow">keyboard_arrow_down</i></AnchorLink>
         </h1>
         <About show={this.state.showBio ? "appear" : "disappear"}/>
-        <Work show={this.state.showWork ? "appear" : "disappear"}/>
+        <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <Resume show={this.state.showResume ? "appear" : "disappear"}/>
         <Contact show={this.state.showContact ? "appear" : "disappear"}/>

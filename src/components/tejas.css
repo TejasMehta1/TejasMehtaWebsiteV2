@@ -77,11 +77,12 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
 
 }
 .headerPictureContainer{
-    height: 1000vh;
+    /*height: 1000vh;*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    padding-bottom: 5%;
 }
 .mainTitle{
     font-family: 'Quicksand', sans-serif;
@@ -376,10 +377,10 @@ a.ripple{
     background-position: 0px 0px, 5px 5px, 0px 0px;
 
     border-radius: 4px;
-    -webkit-transition: all 1s ease-out .7s;
-    -moz-transition: all 1s ease-out .7s;
-    -o-transition: all 1s ease-out .7s;
-    transition: all 1s ease-out .7s;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 
@@ -587,10 +588,10 @@ a.ripple{
     .dynamicContainer{
         width: 90%;
     }
-    .disappear .HomeDepotDiv{
+    .disappear.HomeDepotDiv{
         transform: translate(calc(-111%),0px);
     }
-    .disappear .ZimperiumDiv{
+    .disappear.ZimperiumDiv{
         transform: translate(calc(111%),0px);
 
 
@@ -618,10 +619,10 @@ a.ripple{
         .dynamicContainer{
             width: 70%;
         }
-        .disappear .HomeDepotDiv{
+        .disappear.HomeDepotDiv{
             transform: translate(calc(-142%),0px);
         }
-        .disappear .ZimperiumDiv{
+        .disappear.ZimperiumDiv{
             transform: translate(calc(142%),0px);
 
         }
@@ -630,10 +631,10 @@ a.ripple{
         .dynamicContainer {
             width: 50%;
         }
-        .disappear .ZimperiumDiv{
+        .disappear.ZimperiumDiv{
             transform: translate(calc(200%),0px);
         }
-        .disappear .HomeDepotDiv{
+        .disappear.HomeDepotDiv{
             transform: translate(calc(-200%),0px);
         }
     }

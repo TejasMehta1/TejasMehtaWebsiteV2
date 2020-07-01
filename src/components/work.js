@@ -9,13 +9,13 @@ import OrangeWood from '../images/THDOrangeWood.jpg'
 import THD from "../images/TheHomeDepot.svg"
 import Zimperium from "../images/zimperiumSecurity.svg"
 
-const Work = ({show}) => {
+const Work = ({show, zimpShow, HDShow}) => {
 
   return(
     <React.Fragment>
       <div style={{overflow: "hidden"}} className={show}>
       <h1 id="workExperience" className={"dynamicContainer"}>Work Experience: </h1>
-      <div style={{backgroundImage: `url(${OrangeWood})`}} className="HomeDepotDiv WorkDiv dynamicContainer">
+      <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"HomeDepotDiv WorkDiv dynamicContainer " + HDShow}>
         <div className={"WorkImageDiv"}>
       <a target="_blank" href="https://www.homedepot.com/"><img className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>
         </div>
@@ -33,7 +33,7 @@ const Work = ({show}) => {
       </div>
       </div>
       <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
-      <div className="ZimperiumDiv WorkDiv dynamicContainer">
+      <div id="zimperiumDivTransition" className={"ZimperiumDiv WorkDiv dynamicContainer " + zimpShow}>
         <div className={"WorkImageDiv"}>
           <a target="_blank" href="https://zimperium.com"><img className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/></a>
         </div>
@@ -56,5 +56,7 @@ const Work = ({show}) => {
 }
 Work.propTypes = {
   show: PropTypes.string.isRequired,
+  zimpShow: PropTypes.string.isRequired,
+  HDShow: PropTypes.string.isRequired,
 }
 export default Work

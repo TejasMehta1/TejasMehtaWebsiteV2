@@ -2,13 +2,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import PythonPic from "../images/python.png"
-import JavaPic from "../images/java.png"
+import PythonPic from "../images/python.svg"
+import JavaPic from "../images/java.svg"
 import CPic from "../images/CLogo.svg"
-import PytorchPic from "../images/pytorch.png"
-import HTMLPic from "../images/html.png"
+import PytorchPic from "../images/pytorch.svg"
+import HTMLPic from "../images/html.svg"
 import ReactPic from "../images/react.svg"
-import CSSPic from "../images/css.jpg"
+import CSSPic from "../images/css.svg"
 import FlutterPic from "../images/flutter.svg"
 import GCPPic from "../images/gcp.svg"
 import PostgreSQLPic from "../images/postgresql.svg"
