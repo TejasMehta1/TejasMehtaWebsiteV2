@@ -143,7 +143,7 @@ const Contact = ({show}) => {
               />
             </FormControl>
               <div style={{marginTop: "20px"}}/>
-              <button style={{padding: "12px 12px 12px 12px"}} onClick={sendEmail} className={"buttonBlue ripple"}>Submit</button>
+              <button aria-label="Submit" style={{padding: "12px 12px 12px 12px"}} onClick={sendEmail} className={"buttonBlue ripple"}>Submit</button>
             </div>
           </Card>
         </div>
@@ -161,6 +161,7 @@ const Contact = ({show}) => {
         <h1 className={"ModalTitle"}>Thanks {values.name} :)</h1>
           <p>We will be in touch!</p>
           <button
+            aria-label="close"
             style={{fontFamily: 'Material Icons', padding: "12px 12px 7px 12px"}}
             className={"buttonBlue ripple"}
             onClick={() => toggleModal(false)}

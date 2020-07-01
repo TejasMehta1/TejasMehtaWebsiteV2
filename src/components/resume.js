@@ -30,7 +30,7 @@ const Resume = ({show}) => {
     <React.Fragment>
       <div style={{overflow: "hidden", marginTop: "150px"}} className={show + " dynamicContainer"}>
         <h1 style={{float: "left"}} id={"resumeTitle"}>Resume: </h1>
-        <button onClick={() => window.open(TejasMehtaResume)} style={{float: "right"}} className={"buttonWhite ripple"}>Download</button>
+        <button aria-label="Download" onClick={() => window.open(TejasMehtaResume)} style={{float: "right"}} className={"buttonWhite ripple"}>Download</button>
         {/*<iframe id={"resumeFrame"}*/}
         {/*  // src="https://utexas-my.sharepoint.com/personal/tm33448_austin_eid_utexas_edu/_layouts/15/Doc.aspx?sourcedoc={99535ca3-20c1-48f8-90ac-bb51549cd1df}&amp;action=embedview&amp;wdStartOn=1"*/}
         {/* src={TejasMehtaResume}*/}
@@ -39,14 +39,15 @@ const Resume = ({show}) => {
         <br style={{clear: "both"}}/>
         <div style={{marginTop: "40px"}}>
           <div id={"TejasMehtaResume"}>
-        <Document
+        {/*<Document*/}
 
-          file={TejasMehtaResume}
-          renderAnnotations={true}
-          onLoadSuccess={removeTextLayerOffset}
-        >
-          <Page pageNumber={1} />
-        </Document>  {/*<iframe id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>*/}
+        {/*  file={TejasMehtaResume}*/}
+        {/*  renderAnnotations={true}*/}
+        {/*  onLoadSuccess={removeTextLayerOffset}*/}
+        {/*>*/}
+        {/*  <Page pageNumber={1} />*/}
+        {/*</Document>  */}
+            <iframe id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>
         </div>
         </div>
       </div>

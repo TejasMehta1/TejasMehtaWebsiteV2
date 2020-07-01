@@ -278,7 +278,7 @@ hr.skillLine{
     cursor: pointer;
     color: white;
     /*background-color: #2196f3;*/
-    background-color: #217ef3;
+    background-color: black;
     box-shadow: 0 0 4px #999;
     outline: none;
 }
