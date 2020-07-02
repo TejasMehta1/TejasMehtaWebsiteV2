@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useState } from 'react';
+// import PropTypes from "prop-types"
+import React from 'react';
 import logo from "../images/TMLogoCircle.png"
 import logowhite from "../images/TMLogoCircleWhite.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'

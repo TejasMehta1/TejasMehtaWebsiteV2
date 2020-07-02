@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import PythonPic from "../images/python.svg"
 import JavaPic from "../images/java.svg"
 import CPic from "../images/CLogo.svg"
@@ -15,7 +15,7 @@ import PostgreSQLPic from "../images/postgresql.svg"
 import FirebasePic from "../images/firebase.svg"
 import DockerPic from "../images/docker.svg"
 import PropTypes from "prop-types"
-import About from "./about"
+// import About from "./about"
 const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB}) => {
 
   return(

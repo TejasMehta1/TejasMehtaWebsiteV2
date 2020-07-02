@@ -1,18 +1,18 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import ProfilePic from "../images/profilePic.jpg"
+// import Card from '@material-ui/core/Card';
+// import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
-import Layout from "./layout"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import OrangeWood from '../images/THDOrangeWood.jpg'
-import THD from "../images/TheHomeDepot.svg"
-import Zimperium from "../images/zimperiumSecurity.svg"
+// import Layout from "./layout"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import OrangeWood from '../images/THDOrangeWood.jpg'
+// import THD from "../images/TheHomeDepot.svg"
+// import Zimperium from "../images/zimperiumSecurity.svg"
 import TejasMehtaResume from "../images/TejasMehtaResume.pdf"
-import { Document, Page, pdfjs } from "react-pdf";
-import 'react-pdf/dist/Page/AnnotationLayer.css';
+// import { Document, Page, pdfjs } from "react-pdf";
+// import 'react-pdf/dist/Page/AnnotationLayer.css';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = ({show}) => {
   function removeTextLayerOffset() {
@@ -47,7 +47,7 @@ const Resume = ({show}) => {
         {/*>*/}
         {/*  <Page pageNumber={1} />*/}
         {/*</Document>  */}
-            <iframe title="Tejas Mehta Resume" id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#zoom=FitH"} align="middle"></iframe>
+            <iframe title="Tejas Mehta Resume" id={"resumeIFrame"} className="resumeFrame" src={TejasMehtaResume + "#view=FitH"} align="middle"></iframe>
         </div>
         </div>
       </div>

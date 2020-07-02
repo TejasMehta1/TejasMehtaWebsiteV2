@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import About from "../components/about"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import logo from "../images/TMLogoCircle.png"
-import logowhite from "../images/TMLogoCircleWhite.png"
+// import Image from "../components/image"
+// import SEO from "../components/seo"
+// import logo from "../images/TMLogoCircle.png"
+// import logowhite from "../images/TMLogoCircleWhite.png"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Skills from "./skills"
 import Work from "./work"
@@ -30,9 +30,9 @@ class Attributes extends React.Component {
   }
 
   showItemBasedOnBottomDistance(id, offset){
-    if (id == "zimperiumDivTransition"){
-      console.log(window.innerHeight + window.scrollY - document.getElementById(id).offsetTop);
-    }
+    // if (id === "zimperiumDivTransition"){
+    //   console.log(window.innerHeight + window.scrollY - document.getElementById(id).offsetTop);
+    // }
     return window.innerHeight + window.scrollY - document.getElementById(id).offsetTop > offset;
   }
 
@@ -52,6 +52,7 @@ class Attributes extends React.Component {
       let showDeploymentDB;
       let showWork;
       let showHD;
+      let showUNT;
       let showZimperium;
       let showResume;
       let showContact;
@@ -61,6 +62,7 @@ class Attributes extends React.Component {
       showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
       showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
       showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 50) && this.showItemBasedOnTopDistance("skillsLocation", 20);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
@@ -85,6 +87,7 @@ class Attributes extends React.Component {
         showDeploymentDB: showDeploymentDB,
         showWork: showWork,
         showHD: showHD,
+        showUNT: showUNT,
         showZimperium: showZimperium,
         showResume: showResume,
         showContact: showContact
@@ -113,7 +116,7 @@ class Attributes extends React.Component {
             className="material-icons downArrow">keyboard_arrow_down</i></AnchorLink>
         </h1>
         <About show={this.state.showBio ? "appear" : "disappear"}/>
-        <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"}/>
+        <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"} UNTShow={this.state.showUNT ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <Resume show={this.state.showResume ? "appear" : "disappear"}/>
         <Contact show={this.state.showContact ? "appear" : "disappear"}/>

@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import InputLabel from "@material-ui/core/InputLabel"
 import Modal from "@material-ui/core/Modal"
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from "@material-ui/core/FormControl"
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -12,16 +12,16 @@ import MailOutline from '@material-ui/icons/MailOutline';
 import Fade from '@material-ui/core/Fade';
 import toast from 'toasted-notes';
 import emailjs from 'emailjs-com';
-import ProfilePic from "../images/profilePic.jpg"
+// import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
 import validator from "email-validator"
-import Layout from "./layout"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import OrangeWood from '../images/THDOrangeWood.jpg'
-import THD from "../images/TheHomeDepot.svg"
-import Zimperium from "../images/zimperiumSecurity.svg"
-import TejasMehtaResume from "../images/TejasMehtaResume.pdf"
+// import Layout from "./layout"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import OrangeWood from '../images/THDOrangeWood.jpg'
+// import THD from "../images/TheHomeDepot.svg"
+// import Zimperium from "../images/zimperiumSecurity.svg"
+// import TejasMehtaResume from "../images/TejasMehtaResume.pdf"
 
 const Contact = ({show}) => {
   const [values, setValues] = React.useState({
@@ -37,15 +37,12 @@ const Contact = ({show}) => {
 
   const [openModal, toggleModal] = React.useState(false)
 
-  const colorTheme = "#1a237e";
+  // const colorTheme = "#1a237e";
 
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
   };
 
-  const invalidField = (prop) => {
-      setValues({...values, [prop]: true});
-  }
 
   const sendEmail = () => {
     setFilledNameError(values.name.length === 0);

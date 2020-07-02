@@ -21,6 +21,11 @@ html,body {
 
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .mainHeader h1 h2 h3 h4 h5 h6{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -116,6 +121,22 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
     float: right;
     color: white;
 }
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialIcon{
+    font-size: 2em;
+    color: black;
+}
+
+.socialIcon:hover{
+    color: dodgerblue;
+}
+
 .navLinks a{
     font-size: .8em;
     float: left;
@@ -340,27 +361,27 @@ a.ripple{
 
 .textLink{
     text-decoration: none;
-    color: darkblue;
+    color: dodgerblue;
     border-radius: 15px;
     padding: 1px 4px;
     margin: 0px 2px;
-    -webkit-transition: opacity .2s ease;
-    -moz-transition: opacity .2s ease;
-    -o-transition: opacity .2s ease;
-    transition: opacity .2s ease;
+    -webkit-transition: background-color .2s ease;
+    -moz-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
 }
 
 .textLink:hover{
     color: white;
-    background-color: darkblue;
-    -webkit-transition: opacity .2s ease-in;
-    -moz-transition: opacity .2s ease-in;
-    -o-transition: opacity .2s ease-in;
-    transition: opacity .2s ease-in;
+    background-color: dodgerblue;
+    -webkit-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -o-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 
 }
 
-.HomeDepotDiv{
+.WorkSlideRightDiv{
 
     border-radius: 4px;
     -webkit-transition: all 1s ease-in;
@@ -384,7 +405,9 @@ a.ripple{
     transition: all 1s ease-out;
 }
 
-
+.UNTDiv{
+    background-color: #006A31;
+}
 
 .JobDescription{
     font-weight: 400;
@@ -578,7 +601,7 @@ a.ripple{
         text-align: center;
         width: 100%;
     }
-    .HomeDepotDiv, .ZimperiumDiv {
+    .WorkDiv {
         height: 350px;
     }
 
@@ -589,7 +612,7 @@ a.ripple{
     .dynamicContainer{
         width: 90%;
     }
-    .disappear.HomeDepotDiv{
+    .disappear.WorkSlideRightDiv{
         transform: translate(calc(-111%),0px);
     }
     .disappear.ZimperiumDiv{
@@ -620,7 +643,7 @@ a.ripple{
         .dynamicContainer{
             width: 70%;
         }
-        .disappear.HomeDepotDiv{
+        .disappear.WorkSlideRightDiv{
             transform: translate(calc(-142%),0px);
         }
         .disappear.ZimperiumDiv{
@@ -635,7 +658,7 @@ a.ripple{
         .disappear.ZimperiumDiv{
             transform: translate(calc(200%),0px);
         }
-        .disappear.HomeDepotDiv{
+        .disappear.WorkSlideRightDiv{
             transform: translate(calc(-200%),0px);
         }
     }
@@ -662,7 +685,7 @@ a.ripple{
         width: 60%;
     }
 
-    .HomeDepotDiv, .ZimperiumDiv {
+    .WorkDiv {
         height: 325px;
     }
 }

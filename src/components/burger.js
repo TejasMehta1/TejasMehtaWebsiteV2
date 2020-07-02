@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledBurger } from './burger.styled';
 import { bool, func } from "prop-types"
-import Menu from "./menu"
+// import Menu from "./menu"
 
 const Burger = ({ open, isOpen }) => {
   return (

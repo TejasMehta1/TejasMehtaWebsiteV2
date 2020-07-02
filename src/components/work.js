@@ -1,21 +1,21 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import ProfilePic from "../images/profilePic.jpg"
+// import Card from '@material-ui/core/Card';
+// import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
-import Layout from "./layout"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import Layout from "./layout"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import OrangeWood from '../images/THDOrangeWood.jpg'
 import THD from "../images/TheHomeDepot.svg"
 import Zimperium from "../images/zimperiumSecurity.svg"
-
-const Work = ({show, zimpShow, HDShow}) => {
+import UNT from "../images/unt.svg"
+const Work = ({show, zimpShow, HDShow, UNTShow}) => {
 
   return(
     <React.Fragment>
       <div style={{overflow: "hidden"}} className={show}>
       <h1 id="workExperience" className={"dynamicContainer"}>Work Experience: </h1>
-      <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"HomeDepotDiv WorkDiv dynamicContainer " + HDShow}>
+      <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"WorkSlideRightDiv WorkDiv dynamicContainer " + HDShow}>
         <div className={"WorkImageDiv"}>
       <a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com"><img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>
         </div>
@@ -50,6 +50,24 @@ const Work = ({show, zimpShow, HDShow}) => {
           {/*</ul>*/}
         </div>
       </div>
+        <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
+        <div id="UNTDivTransition" className={"UNTDiv WorkSlideRightDiv WorkDiv dynamicContainer " + UNTShow}>
+          <div className={"WorkImageDiv"}>
+            <a target="_blank" href="http://neogi.unt.edu/" rel="noreferrer" aria-label="unt.edu"><img alt="UNT" className={"WorkPicture transitionFade InvertColors"} src={UNT}/></a>
+          </div>
+          <div className="WorkText">
+            <h1>Research Fellow</h1>
+            <h3> August 2017 - May 2019</h3>
+            <h3 className={"JobDescription"}>EFRI Phononics Team</h3>
+            <div className={"centerButtonMobile"}>
+              <button aria-label="project" className="ripple buttonWhite">Project</button>
+            </div>
+            {/*<ul style={{textAlign: "left"}}>*/}
+            {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}
+            {/*<li>Designed for The Home Depot's Pro Customers to select previously used job addresses to promote ease of use and minimize errors</li>*/}
+            {/*</ul>*/}
+          </div>
+        </div>
       </div>
     </React.Fragment>
   )
@@ -58,5 +76,6 @@ Work.propTypes = {
   show: PropTypes.string.isRequired,
   zimpShow: PropTypes.string.isRequired,
   HDShow: PropTypes.string.isRequired,
+  UNTShow: PropTypes.string.isRequired
 }
 export default Work

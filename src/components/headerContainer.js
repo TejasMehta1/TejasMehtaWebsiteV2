@@ -1,9 +1,9 @@
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
 import Header from "./header"
 import uttower from "../images/uttower.jpg"
 import { CSSTransitionGroup } from 'react-transition-group'
-import AnchorLink from "react-anchor-link-smooth-scroll"
+// import AnchorLink from "react-anchor-link-smooth-scroll"
 import Attributes from "./attributes" // ES6
 
 const HeaderContainer = ({ siteTitle }) => (
