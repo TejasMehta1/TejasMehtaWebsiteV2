@@ -17,6 +17,11 @@ html,body {
     --MainThemeColor: #1a237e;
 }
 
+.iframeContainer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .materialIcon{
 
 }
@@ -668,6 +673,13 @@ a.ripple{
     font-weight: 400;
 }
 
+#portfolioTitle{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Quicksand, sans-serif;
+}
+
 .smallBlueHR{
     width: 50px;
     margin-left: auto;
@@ -675,6 +687,15 @@ a.ripple{
     height: 4px;
     border-radius: 20px;
     background-color: var(--MainThemeColor)
+}
+
+.smallWhiteHR{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .MainModal{

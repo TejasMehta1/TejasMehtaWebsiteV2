@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby"
 // import Card from '@material-ui/core/Card';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
@@ -31,14 +32,14 @@ const Extracurriculars = ({show}) => {
 
 
           <div className="circleContainer">
-            <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+            <Link to="/CAD">
               <figure className={"flowcusFigure circleFigure circle3D"}>
                 <figcaption className={"projectCaption"}>
                   <p style={{marginTop: "75px"}} className={"extraCaption"}>3D Modeling</p>
                 </figcaption>
                 <img className={"projectIcon"} src={CAD} alt="LocoEatsIcon" />
               </figure>
-            </a>
+            </Link>
           </div>
 
           <div className="circleContainer">

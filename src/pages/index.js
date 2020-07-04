@@ -9,26 +9,6 @@ import SEO from "../components/seo"
 // import logowhite from "../images/TMLogoCircleWhite.png"
 class IndexPage extends React.Component {
 
-  constructor() {
-    super();
-    this.state = {
-      showTitle: true,
-      showBio: "disappear",
-    }
-    // MDCRipple.attachTo(document.querySelector('.my-surface'));
-  }
-
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 200;
-        this.setState({
-          showBio: isTop ? "disappear" : "appear"
-        })
-
-    });
-  }
-
-
   render(){
     return (
   <Layout>

@@ -27,13 +27,22 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  function getTitle() {
+    if (title != "Tejas Mehta"){
+        return `%s | ${site.siteMetadata.title}`
+    }
+    else{
+      return `%s`
+    }
+  }
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={getTitle()}
       meta={[
         {
           name: `description`,
