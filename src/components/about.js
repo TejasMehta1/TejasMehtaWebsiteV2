@@ -23,7 +23,7 @@ const About = ({show}) => {
       </p>
         <p>I am a full stack web and mobile developer. I enjoy creating fast, beautiful, and useful products. I'm especially passionate about mental health and education. </p>
         {/*<p>Outside of programming I enjoy singing, dancing, and  develop machine learning curriculum for XLabs</p>*/}
-        <div style={{width: "30%"}} className={"container center"}>
+        <div style={{width: "225px"}} className={"container center"}>
         <a target={"_blank"} rel="noreferrer" aria-label={"Github"} href={"https://github.com/TejasMehta1"}><FontAwesomeIcon  className={"socialIcon transitionFade"} icon={faGithub}/></a>
         <a target={"_blank"} rel="noreferrer" aria-label={"LinkedIn"} href={"https://www.linkedin.com/in/tejasmehta14"}><FontAwesomeIcon  className={"socialIcon transitionFade"} icon={faLinkedin}/></a>
         <a target={"_blank"} rel="noreferrer" aria-label={"Facebook"} href={"https://www.facebook.com/tejasmehta.fb"}><FontAwesomeIcon  className={"socialIcon transitionFade"} icon={faFacebook}/></a>
