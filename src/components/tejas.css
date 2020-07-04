@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons&display=swap");
 html,body {
     /*width: 100%;*/
     /*height: 100%;*/
@@ -19,6 +19,133 @@ html,body {
 
 .materialIcon{
 
+}
+
+.faPlatform{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.faLanguage{
+    margin-right: 20px;
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.projectIcon{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 0;
+    margin-bottom: 0;
+}
+
+.projectFigure{
+    position: relative;
+    overflow: hidden;
+    height: inherit;
+    border-radius: 12px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.locoEatsFigure{
+    background-color: white;
+}
+
+.upliftStressFigure{
+    background: linear-gradient(rgb(51, 122, 183), rgb(186, 92, 11));
+}
+
+.craveRNFigure{
+    background-color: #1D90FF;
+}
+
+.flowcusFigure{
+    background-color: black;
+}
+
+.satoriFigure{
+    background: radial-gradient(purple, black);
+}
+
+.droneFigure{
+    background-color: #1B237E;
+}
+
+.tejastdoitFigure{
+    background: radial-gradient(#bc7300, #003a97);
+}
+.projectContainer{
+    width: calc(50% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    /*margin-top: -15px;*/
+}
+
+.projectCaption{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: filter .4s ease;
+    -moz-transition: filter .4s ease;
+    -o-transition: filter .4s ease;
+    transition: filter .4s ease;
+    background-color: rgba(0, 38, 126, 0.71);
+    filter: opacity(0%);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.figureFrameworksLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.figureFrameworksRight{
+    position: absolute;
+    width: 65%;
+    bottom: 0;
+    right: 0;
+}
+/*.projectCaption:hover{*/
+/*    filter: opacity(100%);*/
+/*    background-color: black;*/
+/*    z-index: 1000000;*/
+/*}*/
+
+.projectCaption:hover{
+    /*transform: scale(1.5);*/
+    -webkit-transition: filter .4s ease;
+    -moz-transition: filter .4s ease;
+    -o-transition: filter .4s ease;
+    transition: filter .4s ease;
+    filter: opacity(100%);
+}
+
+.projectCaption:hover + .projectIcon{
+    transform: scale(1.5);
+    filter: opacity(20%);
+}
+
+
+
+.projectCaption p{
+    font-size: 1.5em;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 5%;
 }
 
 .container {
@@ -81,6 +208,49 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
     border-style: none;
 
 }
+
+.circleIcon{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 0;
+    margin-bottom: 0;
+}
+
+.circleFigure{
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+}
+
+
+
+#extracurricularsTitle{
+    text-align: center;
+    margin-bottom: 0;
+    position: absolute;
+    left: calc(50% - 60px);
+    /*transform: translateY(300%);*/
+
+}
+
+.circleContainer {
+
+}
+
+
+
+.rotatingCircle{
+
+}
+
 .headerPictureContainer{
     /*height: 1000vh;*/
     background-repeat: no-repeat;
@@ -373,7 +543,7 @@ a.ripple{
 
 .textLink:hover{
     color: white;
-    background-color: dodgerblue;
+    background-color: var(--MainThemeColor);
     -webkit-transition: background-color .2s ease-in;
     -moz-transition: background-color .2s ease-in;
     -o-transition: background-color .2s ease-in;
@@ -661,6 +831,10 @@ a.ripple{
         .disappear.WorkSlideRightDiv{
             transform: translate(calc(-200%),0px);
         }
+
+        #extracurricularsTitle{
+            margin-top: 100px;
+        }
     }
     figcaption.codingLanguage{
         width: 7em;
@@ -688,7 +862,12 @@ a.ripple{
     .WorkDiv {
         height: 325px;
     }
+
+    #extracurricularsTitle{
+        margin-top: 70px;
+    }
 }
+
 
 
 
@@ -735,6 +914,67 @@ a.ripple{
     line-height: 1;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 600px){
+    #extracurricularsTitle{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .circlePhotography{
+        position: absolute;
+        right: calc(50% - 75px);
+        transition: right .8s ease;
+        /*transform: translateX(-100%);*/
+    }
+
+    .circle3D{
+        position: absolute;
+        right: calc(50% - 75px);
+        transition: right .8s ease;
+        /*transform: translateX(100%);*/
+    }
+
+    .appear .circlePhotography{
+        right: calc(25% - 87.5px);
+    }
+
+    .circleFigure{
+        width: 175px;
+    }
+
+    .appear .circle3D{
+        right: calc(75% - 87.5px);
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    .circlePhotography{
+        position: absolute;
+        right: calc(50% - 125px);
+        transition: right .8s ease;
+        /*transform: translateX(-100%);*/
+    }
+
+    .circle3D{
+        position: absolute;
+        right: calc(50% - 125px);
+        transition: right .8s ease;
+        /*transform: translateX(100%);*/
+    }
+    .circleFigure{
+        width: 250px;
+    }
+
+    .appear .circlePhotography{
+        right: calc(0% - 125px + 32.5%);
+    }
+
+    .appear .circle3D{
+        right: calc(100% - 125px - 32.5%);
+    }
 }
 
 .Toaster__alert_close:focus {

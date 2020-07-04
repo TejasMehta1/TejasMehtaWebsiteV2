@@ -10,7 +10,8 @@ import Skills from "./skills"
 import Work from "./work"
 import Resume from "./resume"
 import Contact from "./contact"
-
+import Projects from "./projects"
+import Extracurriculars from "./extracurriculars"
 class Attributes extends React.Component {
 
   constructor() {
@@ -23,6 +24,8 @@ class Attributes extends React.Component {
       showDeploymentDB: false,
       showWork: false,
       showZimperium: false,
+      showProjects: false,
+      showExtracurriculars: false,
       showResume: false,
       showContact: false
     }
@@ -54,6 +57,8 @@ class Attributes extends React.Component {
       let showHD;
       let showUNT;
       let showZimperium;
+      let showProjects;
+      let showExtracurriculars;
       let showResume;
       let showContact;
       // if (window.innerHeight < window.innerWidth) {
@@ -63,6 +68,8 @@ class Attributes extends React.Component {
       showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
       showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("skillsLocation", 20);
       showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 50) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showProjects = this.showItemBasedOnBottomDistance("projects", 150) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
+      showExtracurriculars = this.showItemBasedOnBottomDistance("extracurricularsTitle", 100) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
@@ -89,13 +96,17 @@ class Attributes extends React.Component {
         showHD: showHD,
         showUNT: showUNT,
         showZimperium: showZimperium,
+        showProjects: showProjects,
+        showExtracurriculars: showExtracurriculars,
         showResume: showResume,
         showContact: showContact
       })
       let aboutNavLink =  document.getElementById("aboutNavLink");
       showBio ? aboutNavLink.style.color = "lightblue" : aboutNavLink.style.color = "white";
       let workNavLink = document.getElementById("workNavLink")
-      showWork && !(showFrontEnd || showDeploymentDB) ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
+      showWork && !(showProjects) ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
+      let projectsNavLink = document.getElementById("projectsNavLink");
+      (showProjects) && !(showFrontEnd || showDeploymentDB) ? projectsNavLink.style.color = "lightblue" : projectsNavLink.style.color = "white";
       let skillsNavLink = document.getElementById("skillsNavLink");
       (showFrontEnd || showDeploymentDB) && !showResume ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
       let resumeNavLink = document.getElementById("resumeNavLink");
@@ -117,6 +128,8 @@ class Attributes extends React.Component {
         </h1>
         <About show={this.state.showBio ? "appear" : "disappear"}/>
         <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"} UNTShow={this.state.showUNT ? "appear" : "disappear"}/>
+        <Projects show={this.state.showProjects ? "appear" : "disappear"}/>
+        <Extracurriculars show={this.state.showExtracurriculars ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <Resume show={this.state.showResume ? "appear" : "disappear"}/>
         <Contact show={this.state.showContact ? "appear" : "disappear"}/>

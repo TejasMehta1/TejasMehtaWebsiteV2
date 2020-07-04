@@ -61,7 +61,7 @@ class Header extends React.Component {
             <div className="navLinks">
               <AnchorLink offset="250" id="aboutNavLink" className="ripple" href="#profilePic">About </AnchorLink>
               <AnchorLink offset="150" id="workNavLink" className="ripple" href="#workExperience">Work </AnchorLink>
-              <AnchorLink className="ripple" href="#hippl">Projects</AnchorLink>
+              <AnchorLink offset="150" id="projectsNavLink" className="ripple" href="#projects">Projects</AnchorLink>
               <AnchorLink offset='150' id="skillsNavLink" className="ripple"  href="#skillsLocation">Skills</AnchorLink>
               <AnchorLink offset='150' id="resumeNavLink" className="ripple" href="#resumeTitle">Resume</AnchorLink>
               <AnchorLink offset='200' id="contactNavLink" className="ripple" href="#ContactUs">Contact</AnchorLink>
