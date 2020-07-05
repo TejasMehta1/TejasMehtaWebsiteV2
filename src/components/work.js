@@ -1,4 +1,5 @@
 import React from 'react';
+import {navigate} from 'gatsby';
 // import Card from '@material-ui/core/Card';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
@@ -24,7 +25,7 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
         <h3> June 2020 - August 2020</h3>
         <h3 className={"JobDescription"}>Self Checkout</h3>
         <div className={"centerButtonMobile"}>
-        <button aria-label="project" className="ripple buttonWhite">Project</button>
+        <button onClick={() => navigate('/HomeDepot')} aria-label="project" className="ripple buttonWhite">Project</button>
         </div>
         {/*<ul style={{textAlign: "left"}}>*/}
         {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}
@@ -42,7 +43,7 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
           <h3> June 2019 - August 2019</h3>
           <h3 className={"JobDescription"}>ZCrystalball</h3>
           <div className={"centerButtonMobile"}>
-          <button aria-label="project" className="ripple buttonWhite">Project</button>
+          <button onClick={() => navigate('/Zimperium')} aria-label="project" className="ripple buttonWhite">Project</button>
           </div>
           {/*<ul style={{textAlign: "left"}}>*/}
           {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}
@@ -60,7 +61,7 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
             <h3> August 2017 - May 2019</h3>
             <h3 className={"JobDescription"}>EFRI Phononics Team</h3>
             <div className={"centerButtonMobile"}>
-              <button aria-label="project" className="ripple buttonWhite">Project</button>
+              <button onClick={() => navigate('/Research')} aria-label="project" className="ripple buttonWhite">Project</button>
             </div>
             {/*<ul style={{textAlign: "left"}}>*/}
             {/*<li>Integrated an autocomplete job-address input field in The Home Depot's Self Checkout.</li>*/}

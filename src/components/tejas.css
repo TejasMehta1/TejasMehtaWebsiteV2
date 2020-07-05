@@ -17,6 +17,16 @@ html,body {
     --MainThemeColor: #1a237e;
 }
 
+.col-3{
+    width: 33%;
+    float: left;
+}
+
+.col-2{
+    width: 50%;
+    float: left;
+}
+
 .iframeContainer{
     margin-left: auto;
     margin-right: auto;
@@ -546,6 +556,18 @@ a.ripple{
     width: 100%;
 }
 
+.textLinkLight.textLink{
+    font-weight: 600;
+    text-decoration: none;
+    color: #34b5ff;
+    border-radius: 15px;
+    padding: 1px 4px;
+    margin: 0px 2px;
+    -webkit-transition: background-color .2s ease;
+    -moz-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+}
 .textLink{
     text-decoration: none;
     color: #1965bb;
@@ -557,6 +579,8 @@ a.ripple{
     -o-transition: background-color .2s ease;
     transition: background-color .2s ease;
 }
+
+
 
 .textLink:hover{
     color: white;
