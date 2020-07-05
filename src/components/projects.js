@@ -103,7 +103,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>HTML, CSS, JavaScript, JQuery, Firebase</h3>
+                  <h3 className={"faLanguage"}>ReactJS, GCP, Firebase</h3>
                 </div>
               </figcaption>
               <img className={"projectIcon"} src={CSBAIcon} alt="CSBAIcon" />
@@ -116,11 +116,9 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
           <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>Search Engine for automatically crawled Wikipedia pages</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
                   <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
                 </div>
                 <div className={"figureFrameworksRight"}>
@@ -134,19 +132,17 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a href={"https://play.google.com/store/apps/details?id=com.iamtejasmehta.productivitytimer"}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>Pomodoro Timer to maximize productivity by timing breaks and sprints</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
                   <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>Java (Spring), HTML, CSS, GCP</h3>
+                  <h3 className={"faLanguage"}>Java, XML</h3>
                 </div>
               </figcaption>
               <img className={"projectIcon"} src={FlowcusIcon} alt="LocoEatsIcon" />
@@ -158,40 +154,36 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
           <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
             <figure className={"projectFigure satoriFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>Diary app that reminds you of your past entries and insights</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
                   <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>Java (Spring), HTML, CSS, GCP</h3>
+                  <h3 className={"faLanguage"}>Java, XML</h3>
                 </div>
               </figcaption>
-              <img className={"projectIcon"} src={SatoriIcon} alt="LocoEatsIcon" />
+              <img className={"projectIcon"} src={SatoriIcon} alt="SatoriIcon" />
             </figure>
           </a>
         </div>
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a href={"https://tejasmehta1.github.io/SGA/"}>
             <figure className={"projectFigure tejastdoitFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>My senate campaign website for UNT's student government</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
                   <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>Java (Spring), HTML, CSS, GCP</h3>
+                  <h3 className={"faLanguage"}>HTML, CSS, Javascript</h3>
                 </div>
               </figcaption>
-              <img className={"projectIcon"} src={TejasdoitIcon} alt="LocoEatsIcon" />
+              <img className={"projectIcon"} src={TejasdoitIcon} alt="TejasdoitIcon" />
             </figure>
           </a>
         </div>
@@ -201,16 +193,14 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
           <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
             <figure className={"projectFigure droneFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>Concept for delivering food and medicine to the elderly during COVID-19</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
                   <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>Java (Spring), HTML, CSS, GCP</h3>
+                  <h3 className={"faLanguage"}>HTML, CSS, JavaScript</h3>
                 </div>
               </figcaption>
               <img style={{filter: "invert(100%) grayscale(100%)", webkitFilter: "invert(100%) grayscale(100%)"}} className={"projectIcon"} src={DroneIcon} alt="LocoEatsIcon" />
@@ -222,16 +212,16 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
           <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Locally owned and Black owned restaurant discovery service</p>
+                <p>Custom watchface for Amazefit Bip</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
-                  <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
+                  {/*<FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>*/}
+                  {/*<FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>*/}
+                  {/*<FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>*/}
                 </div>
                 <div className={"figureFrameworksRight"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                  <h3 className={"faLanguage"}>Java (Spring), HTML, CSS, GCP</h3>
+                  <h3 className={"faLanguage"}>JSON</h3>
                 </div>
               </figcaption>
               <img className={"projectIcon"} src={AmazefitIcon} alt="LocoEatsIcon" />

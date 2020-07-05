@@ -22,6 +22,18 @@ html,body {
     margin-right: auto;
 }
 
+.centerItem{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.verticallyAlign{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .materialIcon{
 
 }
@@ -673,7 +685,7 @@ a.ripple{
     font-weight: 400;
 }
 
-#portfolioTitle{
+.projectPageTitle{
     color: white;
     text-align: center;
     padding-top: 50px;

@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
 
         {/*<div style={{backgroundColor: "#002054"}}>*/}
         <div style={{backgroundColor: "rgba(38,0,71,0.98)"}}>
-          <h1 id="portfolioTitle" style={{fontWeight: 600}}>Portfolio</h1>
+          <h1 id="portfolioTitle" className={"projectPageTitle"} style={{fontWeight: 600}}>Portfolio</h1>
           <hr className={"smallWhiteHR"}/>
           <div  className={"dynamicContainer iframeContainer"}>
           <iframe
