@@ -100,7 +100,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
           <a href={"https://texascsba.org"}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
-                <p>Matches stressed students with trained peer supporters</p>
+                <p>Computer Science and Business Honors Association</p>
                 <div className={"figureFrameworksLeft"}>
                   {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
                   <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
@@ -155,7 +155,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a href={"https://play.google.com/store/apps/details?id=com.iamtejasmehta.dailyepiphany"}>
             <figure className={"projectFigure satoriFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Diary app that reminds you of your past entries and insights</p>

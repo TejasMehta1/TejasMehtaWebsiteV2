@@ -205,7 +205,8 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
 
 .resumeFrame{
     width: 100%;
-    height: 1150px;
+    height: 70vw;
+    /*height: 1150px;*/
 }
 
 .mainHeader{
