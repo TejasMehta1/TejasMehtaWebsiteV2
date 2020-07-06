@@ -77,7 +77,7 @@ class IndexPage extends React.Component {
             </Slider>
             <div className={"col-3"}>
             <h2>Purpose:</h2>
-            <p>Provide a "crystal ball" view into Zimperium's worldwide cloud infrastructure <br/> Displays key information for each VPC including:</p>
+            <p>Provide a "crystal ball" view into Zimperium's worldwide cloud infrastructure <br/><br/> Displays key information for each VPC including:</p>
               <ul>
                 <li>
                   Location
