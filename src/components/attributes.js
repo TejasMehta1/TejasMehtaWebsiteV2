@@ -74,7 +74,7 @@ class Attributes extends React.Component {
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
         showResume = this.showItemBasedOnBottomDistance("resumeTitle" , 350) && this.showItemBasedOnTopDistance("TejasMehtaResume", -800);
-        showContact = this.showItemBasedOnBottomDistance("ContactUs" , 350)
+        showContact = this.showItemBasedOnBottomDistance("ContactUs" , 300)
         // console.log(document.getElementById("backEndTitle").getBoundingClientRect().top);
       // }
       // else{

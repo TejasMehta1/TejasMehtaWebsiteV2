@@ -17,15 +17,7 @@ html,body {
     --MainThemeColor: #1a237e;
 }
 
-.col-3{
-    width: 33%;
-    float: left;
-}
 
-.col-2{
-    width: 50%;
-    float: left;
-}
 
 .iframeContainer{
     margin-left: auto;
@@ -820,9 +812,20 @@ a.ripple{
     .mainTitle{
         display: none;
     }
+    .projectCaption p, .projectCaption h3, .projectCaption .figureFrameworksLeft{
+        display: none!important;
+    }
 }
 
 @media screen and (orientation: portrait){
+    .col-3{
+        width: 100%;
+    }
+
+    .col-2{
+        width: 100%;
+    }
+
     .WorkImageDiv{
         margin-right: auto;
         height: 30%;
@@ -895,6 +898,16 @@ a.ripple{
 }
 
 @media screen and (orientation: landscape){
+    .col-3{
+        width: 33%;
+        float: left;
+    }
+
+    .col-2{
+        width: 50%;
+        float: left;
+    }
+
     #mobileNav{
         display: none;
     }
