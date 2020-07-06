@@ -814,6 +814,7 @@ a.ripple{
     }
     .projectCaption p, .projectCaption h3, .projectCaption .figureFrameworksLeft{
         display: none!important;
+        font-size: 13px;
     }
 }
 
