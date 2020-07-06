@@ -3,19 +3,28 @@ import React from 'react';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
 import LocoEatsIcon from "../images/LocoEats.svg"
+import LocoEatsWindow from "../images/LocoEatsWindow.png"
 import CSBAIcon from "../images/csbalogo.svg"
+import CSBAWindow from "../images/CSBAWindow.png"
 import UpliftStressIcon from "../images/upliftstress.svg"
+import UpliftStressWindow from "../images/UpliftStressWindow.png"
 import CraveRNIcon from "../images/cravern.svg"
+import CraveRNWindow from "../images/CraveRNWindow.png"
 import VicayaIcon from "../images/vicaya.svg"
+import VicayaWindow from "../images/VicayaWindow.png"
 import FlowcusIcon from "../images/flowcus.svg"
+import FlowcusWindow from "../images/FlowcusWindow.png"
 import SatoriIcon from "../images/satori.svg"
+import SatoriWindow from "../images/SatoriWindow.png"
 import { faAppStore} from "@fortawesome/free-brands-svg-icons/faAppStore"
 import { faGooglePlay} from "@fortawesome/free-brands-svg-icons/faGooglePlay"
 import { faGlobe} from "@fortawesome/free-solid-svg-icons/faGlobe"
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"
 import { faAppStoreIos } from "@fortawesome/free-brands-svg-icons/faAppStoreIos"
 import TejasdoitIcon from "../images/tejasdoit.svg"
+import TejasdoitWindow from "../images/TejasdoitWindow.jpg"
 import DroneIcon from "../images/drone.svg"
+import DroneWindow from "../images/DroneDeliveryWindow.png"
 import AmazefitIcon from "../images/amazefit.png"
 import AmazefitWebPIcon from "../images/amazefit.webp"
 // import Layout from "./layout"
@@ -53,7 +62,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         <h1 className={"sectionTitle"} style={{marginTop: "100px"}} id="projects">Projects: </h1>
         <hr className={"smallWhiteHR"}/>
         <div className="projectContainer">
-          <a onClick={() => configureProp("Loco Eats", "null", "null", "null", "https://locoeats.org",LocoEatsIcon)}>
+          <a onClick={() => configureProp("Loco Eats", "null", "null", "null", "https://locoeats.org",LocoEatsWindow)}>
           <figure className={"projectFigure locoEatsFigure"}>
             <figcaption className={"projectCaption"}>
               <p>Locally owned and Black owned restaurant discovery service</p>
@@ -77,7 +86,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("UpliftStress", "https://github.com/TejasMehta1/UpliftStressProduction", "null", "null", "https://upliftstress.com",UpliftStressIcon)}>
+          <a onClick={() => configureProp("UpliftStress", "https://github.com/TejasMehta1/UpliftStressProduction", "null", "null", "https://upliftstress.com",UpliftStressWindow)}>
             <figure className={"projectFigure upliftStressFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Matches stressed students with trained peer supporters</p>
@@ -98,7 +107,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("CraveRN", "https://github.com/TejasMehta1/CraveRNWeb", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.crave_rn", "null", "https://craverightnow.com",CraveRNIcon)}>
+          <a onClick={() => configureProp("CraveRN", "https://github.com/TejasMehta1/CraveRNWeb", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.crave_rn", "null", "https://craverightnow.com",CraveRNWindow)}>
             <figure className={"projectFigure craveRNFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Quiz based restaurant discovery service for restaurants nearby</p>
@@ -119,7 +128,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Texas CSBA", "null", "null", "null", "https://texascsba.org",CSBAIcon)}>
+          <a onClick={() => configureProp("Texas CSBA", "null", "null", "null", "https://texascsba.org",CSBAWindow)}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Computer Science and Business Honors Association</p>
@@ -139,7 +148,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Vicaya", "null", "null", "null", "https://vicaya-uwvx5irqqa-uc.a.run.app/", VicayaIcon)}>
+          <a onClick={() => configureProp("Vicaya", "null", "null", "null", "https://vicaya-uwvx5irqqa-uc.a.run.app/", VicayaWindow)}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Search Engine for automatically crawled Wikipedia pages</p>
@@ -158,7 +167,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Flowcus Timer", "https://github.com/TejasMehta1/Flowcus", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.productivitytimer", "null", "null", FlowcusIcon)}>
+          <a onClick={() => configureProp("Flowcus Timer", "https://github.com/TejasMehta1/Flowcus", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.productivitytimer", "null", "null", FlowcusWindow)}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Pomodoro Timer to maximize productivity by timing breaks and sprints</p>
@@ -177,7 +186,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Satori", "null", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.dailyepiphany", "null", "null", SatoriIcon)}>
+          <a onClick={() => configureProp("Satori", "null", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.dailyepiphany", "null", "null", SatoriWindow)}>
             <figure className={"projectFigure satoriFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Diary app that reminds you of your past entries and insights</p>
@@ -196,7 +205,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Tejasdoit SGA", "https://github.com/TejasMehta1/SGA", "null", "null", "https://tejasmehta1.github.io/SGA/", TejasdoitIcon)}>
+          <a onClick={() => configureProp("Tejas Mehta SGA", "https://github.com/TejasMehta1/SGA", "null", "null", "https://tejasmehta1.github.io/SGA/", TejasdoitWindow)}>
             <figure className={"projectFigure tejastdoitFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>My senate campaign website for UNT's student government</p>
@@ -216,7 +225,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("Drone Delivery Concept", "https://github.com/TejasMehta1/DroneDeliveryConcept", "null", "null", "https://tejasmehta1.github.io/DroneDeliveryConcept/", DroneIcon)}>
+          <a onClick={() => configureProp("Drone Delivery Concept", "https://github.com/TejasMehta1/DroneDeliveryConcept", "null", "null", "https://tejasmehta1.github.io/DroneDeliveryConcept/", DroneWindow)}>
             <figure className={"projectFigure droneFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Concept for delivering food and medicine to the elderly during COVID-19</p>
@@ -261,7 +270,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
       </div>
       <Modal
-        className={"MainModal transitionFade"}
+        className={"ProjectModal transitionFade"}
         open={openModal}
         onClose={() => toggleModal(false)}
         aria-labelledby="simple-modal-title"

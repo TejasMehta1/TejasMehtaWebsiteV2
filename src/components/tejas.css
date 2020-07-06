@@ -160,7 +160,8 @@ html,body {
     margin-left: 20px;
 }
 .ModalImage{
-    width: 200px;
+    width: 50vh;
+    border-radius: 4px;
 }
 .projectCaption:hover{
     cursor: pointer;
@@ -763,6 +764,12 @@ a.ripple{
     outline: 0;
     margin: auto;
     top: 40%!important;
+}
+
+.ProjectModal{
+    outline: 0;
+    margin: auto;
+    top: 15%!important;
 }
 
 .rootDivModal{
