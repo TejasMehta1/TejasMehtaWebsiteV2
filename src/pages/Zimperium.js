@@ -40,7 +40,13 @@ class IndexPage extends React.Component {
       <React.Fragment>
         <LeanHeader/>
         <div style={{height: "40vh", position: "relative"}} className={"ZimperiumDiv"}>
-          <div style={{backgroundImage: `url(${Zimperium}`, height: "40vh", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}></div>
+          <div style={{
+  backgroundImage: `url(${Zimperium}`,
+  height: "40vh",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "60%",
+  backgroundPosition: "center"
+}}/>
           {/*<img className={"centerItem verticallyAlign"} style={{}} src={Zimperium}/>*/}
         </div>
         <SEO title="Zimperium" />
