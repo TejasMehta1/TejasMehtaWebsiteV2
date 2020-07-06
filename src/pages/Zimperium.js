@@ -17,7 +17,8 @@ import Map from "../images/Map.png"
 import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
 import ZimpArch from "../images/zimpArch.png"
-
+import Present1 from "../images/CBPresent1.jpg"
+import Present2 from "../images/CBPresent2.jpg"
 
 import Card from "@material-ui/core/Card"
 // import logo from "../images/TMLogoCircle.png"
@@ -60,6 +61,12 @@ class IndexPage extends React.Component {
               </div>
               <div>
                 <img src={VPC}/>
+              </div>
+              <div>
+                <img src={Present1}/>
+              </div>
+              <div>
+                <img src={Present2}/>
               </div>
             </Slider>
             <div className={"col-3"}>
