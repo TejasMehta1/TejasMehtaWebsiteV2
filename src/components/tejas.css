@@ -152,7 +152,18 @@ html,body {
 /*    z-index: 1000000;*/
 /*}*/
 
+
+
+.IconHolderModal a svg{
+    font-size: 4em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.ModalImage{
+    width: 200px;
+}
 .projectCaption:hover{
+    cursor: pointer;
     /*transform: scale(1.5);*/
     -webkit-transition: filter .4s ease;
     -moz-transition: filter .4s ease;
@@ -623,8 +634,6 @@ a.ripple{
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 5px 5px, 0px 0px;
-
-    border-radius: 4px;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
@@ -640,6 +649,7 @@ a.ripple{
 }
 
 .WorkDiv{
+    border-radius: 4px;
     /*width: 80%;*/
     /*margin-left: auto;*/
     /*margin-right: auto;*/

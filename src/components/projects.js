@@ -12,6 +12,7 @@ import SatoriIcon from "../images/satori.svg"
 import { faAppStore} from "@fortawesome/free-brands-svg-icons/faAppStore"
 import { faGooglePlay} from "@fortawesome/free-brands-svg-icons/faGooglePlay"
 import { faGlobe} from "@fortawesome/free-solid-svg-icons/faGlobe"
+import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub"
 import { faAppStoreIos } from "@fortawesome/free-brands-svg-icons/faAppStoreIos"
 import TejasdoitIcon from "../images/tejasdoit.svg"
 import DroneIcon from "../images/drone.svg"
@@ -21,9 +22,30 @@ import AmazefitWebPIcon from "../images/amazefit.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PhotographyWebP from "../images/photography.webp"
 import Photography from "../images/photography.png"
+import Fade from "@material-ui/core/Fade"
+import Card from "@material-ui/core/Card"
+import Modal from "@material-ui/core/Modal"
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
+
+  const [openModal, toggleModal] = React.useState(false);
+  const [modalTitle, setModalTitle] = React.useState("");
+  const [githubLink, setGithubLink] = React.useState("null");
+  const [playstoreLink, setPlaystoreLink] = React.useState("null");
+  const [appstoreLink, setAppstoreLink] = React.useState("null");
+  const [webLink, setWebLink] = React.useState("null");
+  const [modalImage, setModalImage] = React.useState(LocoEatsIcon);
+
+  function configureProp(name, github, playstore, appstore, web, image) {
+      setModalTitle(name);
+      toggleModal(true);
+      setGithubLink(github);
+      setPlaystoreLink(playstore);
+      setAppstoreLink(appstore);
+      setWebLink(web);
+      setModalImage(image);
+  }
   // const iconSize = "3.75em";
   return(
     <React.Fragment>
@@ -31,7 +53,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         <h1 className={"sectionTitle"} style={{marginTop: "100px"}} id="projects">Projects: </h1>
         <hr className={"smallWhiteHR"}/>
         <div className="projectContainer">
-          <a href={"https://locoeats.org"}>
+          <a onClick={() => configureProp("Loco Eats", "null", "null", "null", "https://locoeats.org",LocoEatsIcon)}>
           <figure className={"projectFigure locoEatsFigure"}>
             <figcaption className={"projectCaption"}>
               <p>Locally owned and Black owned restaurant discovery service</p>
@@ -55,7 +77,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a href={"https://upliftstress.com"}>
+          <a onClick={() => configureProp("UpliftStress", "https://github.com/TejasMehta1/UpliftStressProduction", "null", "null", "https://upliftstress.com",UpliftStressIcon)}>
             <figure className={"projectFigure upliftStressFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Matches stressed students with trained peer supporters</p>
@@ -76,7 +98,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a href={"https://craverightnow.com"}>
+          <a onClick={() => configureProp("CraveRN", "https://github.com/TejasMehta1/CraveRNWeb", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.crave_rn", "null", "https://craverightnow.com",CraveRNIcon)}>
             <figure className={"projectFigure craveRNFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Quiz based restaurant discovery service for restaurants nearby</p>
@@ -97,7 +119,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://texascsba.org"}>
+          <a onClick={() => configureProp("Texas CSBA", "null", "null", "null", "https://texascsba.org",CSBAIcon)}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Computer Science and Business Honors Association</p>
@@ -117,7 +139,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a onClick={() => configureProp("Vicaya", "null", "null", "null", "https://vicaya-uwvx5irqqa-uc.a.run.app/", VicayaIcon)}>
             <figure className={"projectFigure locoEatsFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Search Engine for automatically crawled Wikipedia pages</p>
@@ -136,7 +158,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://play.google.com/store/apps/details?id=com.iamtejasmehta.productivitytimer"}>
+          <a onClick={() => configureProp("Flowcus Timer", "https://github.com/TejasMehta1/Flowcus", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.productivitytimer", "null", "null", FlowcusIcon)}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Pomodoro Timer to maximize productivity by timing breaks and sprints</p>
@@ -155,7 +177,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://play.google.com/store/apps/details?id=com.iamtejasmehta.dailyepiphany"}>
+          <a onClick={() => configureProp("Satori", "null", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.dailyepiphany", "null", "null", SatoriIcon)}>
             <figure className={"projectFigure satoriFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Diary app that reminds you of your past entries and insights</p>
@@ -174,7 +196,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://tejasmehta1.github.io/SGA/"}>
+          <a onClick={() => configureProp("Tejasdoit SGA", "https://github.com/TejasMehta1/SGA", "null", "null", "https://tejasmehta1.github.io/SGA/", TejasdoitIcon)}>
             <figure className={"projectFigure tejastdoitFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>My senate campaign website for UNT's student government</p>
@@ -194,7 +216,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a onClick={() => configureProp("Drone Delivery Concept", "https://github.com/TejasMehta1/DroneDeliveryConcept", "null", "null", "https://tejasmehta1.github.io/DroneDeliveryConcept/", DroneIcon)}>
             <figure className={"projectFigure droneFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Concept for delivering food and medicine to the elderly during COVID-19</p>
@@ -213,7 +235,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://github.com/TejasMehta1/AmazefitBipWatchFace"}>
+          <a onClick={() => configureProp("Amazefit Bip Watchface", "https://github.com/TejasMehta1/AmazefitBipWatchface", "null", "null", "null", AmazefitIcon)}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Custom watchface for Amazefit Bip</p>
@@ -238,6 +260,36 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
       </div>
+      <Modal
+        className={"MainModal transitionFade"}
+        open={openModal}
+        onClose={() => toggleModal(false)}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <Fade in={openModal}>
+          <div className={"dynamicContainer rootDivModal transitionFade"}>
+            <Card style={{padding: "30px", width: "90%", marginLeft:"auto", marginRight: "auto"}}>
+              <h1 className={"ModalTitle"}>{modalTitle}</h1>
+              <img className={"ModalImage"} src={modalImage} alt={modalTitle}/>
+              <p className={"IconHolderModal"}>
+                <a href={githubLink} style={{display: githubLink==="null" ? "none": "contents"}}><FontAwesomeIcon className={"ModalIconLink socialIcon transitionFade"} icon={faGithub}/></a>
+                <a href={playstoreLink} style={{display: playstoreLink==="null" ? "none": "contents"}}><FontAwesomeIcon className={"ModalIconLink socialIcon transitionFade"} icon={faGooglePlay}/></a>
+                <a href={appstoreLink} style={{display: appstoreLink==="null" ? "none": "contents"}}><FontAwesomeIcon className={"ModalIconLink socialIcon transitionFade"} icon={faAppStore}/></a>
+                <a href={webLink} style={{display: webLink==="null" ? "none": "contents"}}><FontAwesomeIcon className={"ModalIconLink socialIcon transitionFade"} icon={faGlobe}/></a>
+              </p>
+              <button
+                aria-label="close"
+                style={{fontFamily: 'Material Icons', padding: "12px 12px 7px 12px"}}
+                className={"buttonBlue ripple"}
+                onClick={() => toggleModal(false)}
+              >
+                <i className="material-icons">close</i>
+              </button>
+            </Card>
+          </div>
+        </Fade>
+      </Modal>
     </React.Fragment>
   )
 }
