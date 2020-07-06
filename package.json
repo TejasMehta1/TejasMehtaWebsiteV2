@@ -22,6 +22,8 @@
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",

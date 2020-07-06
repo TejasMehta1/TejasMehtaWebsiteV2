@@ -63,13 +63,13 @@ class Attributes extends React.Component {
       let showContact;
       // if (window.innerHeight < window.innerWidth) {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
-         showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("profilePic",50);
+         showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("workExperience",250);
       showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
-      showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
-      showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("skillsLocation", 20);
-      showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 50) && this.showItemBasedOnTopDistance("skillsLocation", 20);
-      showProjects = this.showItemBasedOnBottomDistance("projects", 150) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
-      showExtracurriculars = this.showItemBasedOnBottomDistance("extracurricularsTitle", 100) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
+      showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("projects", 20);
+      showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
+      showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 50) && this.showItemBasedOnTopDistance("projects", 20);
+      showProjects = this.showItemBasedOnBottomDistance("projects", 150) && this.showItemBasedOnTopDistance("frontEndTitle", 150);
+      showExtracurriculars = this.showItemBasedOnBottomDistance("extracurricularsTitle", 100) && this.showItemBasedOnTopDistance("frontEndTitle", 150);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
@@ -102,7 +102,7 @@ class Attributes extends React.Component {
         showContact: showContact
       })
       let aboutNavLink =  document.getElementById("aboutNavLink");
-      showBio ? aboutNavLink.style.color = "lightblue" : aboutNavLink.style.color = "white";
+      showBio && !(showWork) ? aboutNavLink.style.color = "lightblue" : aboutNavLink.style.color = "white";
       let workNavLink = document.getElementById("workNavLink")
       showWork && !(showProjects) ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
       let projectsNavLink = document.getElementById("projectsNavLink");

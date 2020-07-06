@@ -3,8 +3,11 @@ import { Link } from "gatsby"
 // import Card from '@material-ui/core/Card';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
-import CAD from "../images/3dmodel2.svg"
-import Photography from "../images/photography.svg"
+// import CAD from "../images/3dmodel2.svg"
+import CAD from "../images/3dmodel.png"
+import CADWebP from "../images/3dmodel.webp"
+import Photography from "../images/photography.png"
+import PhotographyWebP from "../images/photography.webp"
 // import Layout from "./layout"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -37,7 +40,12 @@ const Extracurriculars = ({show}) => {
                 <figcaption className={"projectCaption"}>
                   <p style={{marginTop: "75px"}} className={"extraCaption"}>3D Modeling</p>
                 </figcaption>
-                <img className={"projectIcon"} src={CAD} alt="LocoEatsIcon" />
+                <picture className={"projectIcon"}>
+                  <source srcSet={CADWebP} type="image/webp"/>
+                  <source srcSet={CAD} type="image/jpeg"/>
+                  <img className={"projectIcon"} src={CAD} alt="CAD"/>
+                </picture>
+                {/*<img className={"projectIcon"} src={CAD} alt="LocoEatsIcon" />*/}
               </figure>
             </Link>
           </div>
@@ -48,7 +56,12 @@ const Extracurriculars = ({show}) => {
                 <figcaption className={"projectCaption"}>
                   <p style={{marginTop: "75px"}} className={"extraCaption"}>Photography</p>
                 </figcaption>
-                <img className={"projectIcon"} src={Photography} alt="LocoEatsIcon" />
+                <picture className={"projectIcon"}>
+                  <source srcSet={PhotographyWebP} type="image/webp"/>
+                    <source srcSet={Photography} type="image/jpeg"/>
+                      <img className={"projectIcon"} src={Photography} alt="Photography"/>
+                </picture>
+                {/*<img className={"projectIcon"} src={Photography} alt="LocoEatsIcon" />*/}
               </figure>
             </a>
           </div>

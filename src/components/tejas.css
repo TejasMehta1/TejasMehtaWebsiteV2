@@ -51,14 +51,14 @@ html,body {
 .faPlatform{
     margin-left: 20px;
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .faLanguage{
     margin-right: 20px;
     text-align: right;
     margin-bottom: 15px;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 .projectIcon{
@@ -109,7 +109,7 @@ html,body {
     background: radial-gradient(#bc7300, #003a97);
 }
 .projectContainer{
-    width: calc(50% - 10px);
+    width: calc(50% - 14px);
     margin-left: 5px;
     margin-right: 5px;
     float: left;
@@ -166,10 +166,14 @@ html,body {
     filter: opacity(20%);
 }
 
+.projectCaption:hover + .projectIcon .projectIcon{
+    transform: scale(1.5);
+    filter: opacity(20%);
+}
 
 
 .projectCaption p{
-    font-size: 1.5em;
+    font-size: 1.5vw;
     line-height: 150%;
     text-align: center;
     margin-top: 5%;
@@ -187,10 +191,16 @@ html,body {
 
 h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContainer, h5.dynamicContainer, h6.dynamicContainer{
     font-family: Quicksand, sans-serif !important;
+
 }
 
 .dynamicContainer h1, .dynamicContainer h2, .dynamicContainer h3, .dynamicContainer h4, .dynamicContainer h5, .dynamicContainer h6{
     font-family: Quicksand, sans-serif !important;
+}
+
+.sectionTitle{
+    text-align: center;
+    text-shadow: black;
 }
 
 .resumeFrame{
@@ -486,6 +496,10 @@ hr.skillLine{
     background-size: 100%;
     transition: background 0s;
     color: white;
+}
+
+#workExperience{
+    margin-top: 40px;
 }
 .buttonBlue {
     border: none;

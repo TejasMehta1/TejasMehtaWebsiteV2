@@ -15,9 +15,12 @@ import { faGlobe} from "@fortawesome/free-solid-svg-icons/faGlobe"
 import { faAppStoreIos } from "@fortawesome/free-brands-svg-icons/faAppStoreIos"
 import TejasdoitIcon from "../images/tejasdoit.svg"
 import DroneIcon from "../images/drone.svg"
-import AmazefitIcon from "../images/amazefit.svg"
+import AmazefitIcon from "../images/amazefit.png"
+import AmazefitWebPIcon from "../images/amazefit.webp"
 // import Layout from "./layout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PhotographyWebP from "../images/photography.webp"
+import Photography from "../images/photography.png"
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
@@ -25,7 +28,8 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
   return(
     <React.Fragment>
       <div style={{overflow: "hidden"}} className={show + " dynamicContainer"}>
-        <h1 style={{marginTop: "100px"}} id="projects">Projects: </h1>
+        <h1 className={"sectionTitle"} style={{marginTop: "100px"}} id="projects">Projects: </h1>
+        <hr className={"smallWhiteHR"}/>
         <div className="projectContainer">
           <a href={"https://locoeats.org"}>
           <figure className={"projectFigure locoEatsFigure"}>
@@ -209,7 +213,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
         </div>
 
         <div className="projectContainer">
-          <a href={"https://vicaya-uwvx5irqqa-uc.a.run.app"}>
+          <a href={"https://github.com/TejasMehta1/AmazefitBipWatchFace"}>
             <figure className={"projectFigure flowcusFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Custom watchface for Amazefit Bip</p>
@@ -224,7 +228,11 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
                   <h3 className={"faLanguage"}>JSON</h3>
                 </div>
               </figcaption>
-              <img className={"projectIcon"} src={AmazefitIcon} alt="LocoEatsIcon" />
+              <picture className={"projectIcon"}>
+                <source srcSet={AmazefitWebPIcon} type="image/webp"/>
+                <source srcSet={AmazefitIcon} type="image/jpeg"/>
+                <img className={"projectIcon"} src={AmazefitIcon} alt="Amazefit Watchface"/>
+              </picture>
             </figure>
           </a>
         </div>

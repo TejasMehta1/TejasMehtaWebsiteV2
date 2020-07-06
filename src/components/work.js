@@ -15,7 +15,8 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
   return(
     <React.Fragment>
       <div style={{overflow: "hidden"}} className={show}>
-      <h1 id="workExperience" className={"dynamicContainer"}>Work Experience: </h1>
+      <h1 id="workExperience" className={"dynamicContainer sectionTitle"}>Work Experience: </h1>
+        <hr className={"smallWhiteHR"}/>
       <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"WorkSlideRightDiv WorkDiv dynamicContainer " + HDShow}>
         <div className={"WorkImageDiv"}>
       <a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com"><img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>

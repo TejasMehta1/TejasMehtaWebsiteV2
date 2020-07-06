@@ -21,8 +21,9 @@ const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB}) => {
   return(
     <React.Fragment>
       <div id="skillsLocation" style={{marginTop: "40px"}} className={"dynamicContainer"}>
-        <h1 className={"quicksand " + showFrontEnd}>Technical Skills:</h1>
-        <hr className={"skillLine " + showFrontEnd}/>
+        <h1 className={"sectionTitle " + showFrontEnd}>Technical Skills:</h1>
+        <hr className={"smallWhiteHR"}/>
+        {/*<hr className={"skillLine " + showFrontEnd}/>*/}
       <h2 className={"quicksand frontEnd " + showFrontEnd} id={"frontEndTitle"}>Front End</h2>
         <div className={"frontEnd " + showFrontEnd}>
           <figure className={"codingLanguage"}>
