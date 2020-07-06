@@ -1,10 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: `Tejas Mehta`,
+    siteUrl: `https://iamtejasmehta.com`,
     description: `Developer, Entrepreneur, Designer. I like to make products that are beautiful, fast, and useful.`,
     author: `Tejas Mehta`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-159042150-1`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
