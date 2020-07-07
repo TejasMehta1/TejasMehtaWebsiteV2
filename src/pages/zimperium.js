@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
                   <h4>Engineering</h4>
                   <ul>
                     <li>Easily find crucial endpoints for each VPC for logging, debugging, and testing purposes and find its device breakdown and version</li>
-                    <li>Utilize Crystalball's API to automatically add new VPC's to the website using the deploy tool</li>
+                    <li>Utilize Crystalball's API to automatically add new VPCs to the website using the deploy tool</li>
                   </ul>
                 </li>
                 <li>
