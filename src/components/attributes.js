@@ -8,7 +8,7 @@ import About from "../components/about"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Skills from "./skills"
 import Work from "./work"
-import Resume from "./resume"
+import ResumeFrame from "./resumeFrame"
 import Contact from "./contact"
 import Projects from "./projects"
 import Extracurriculars from "./extracurriculars"
@@ -131,7 +131,7 @@ class Attributes extends React.Component {
         <Projects show={this.state.showProjects ? "appear" : "disappear"}/>
         <Extracurriculars show={this.state.showExtracurriculars ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
-        <Resume show={this.state.showResume ? "appear" : "disappear"}/>
+        <ResumeFrame show={this.state.showResume ? "appear" : "disappear"}/>
         <Contact show={this.state.showContact ? "appear" : "disappear"}/>
       </React.Fragment>
     );
