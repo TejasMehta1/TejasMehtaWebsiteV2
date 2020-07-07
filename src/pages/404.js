@@ -1,14 +1,18 @@
 import React from "react"
-
-import Layout from "../components/layout"
+import { navigate } from "gatsby"
+import LeanHeader from "../components/leanheader"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout>
+  <React.Fragment>
+  <LeanHeader/>
     <SEO title="404: Not found" />
+    <div style={{position: "relative", paddingTop: "20vh", height: "100vh", textAlign: "center", color: "white", backgroundColor: "black"}}>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+      <button onClick={() => navigate("/")} className={"ripple buttonWhite"}>Return Home</button>
+    </div>
+  </React.Fragment>
 )
 
 export default NotFoundPage
