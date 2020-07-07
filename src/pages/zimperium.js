@@ -5,6 +5,7 @@ import React from "react"
 import Layout from "../components/layout"
 import CADLayout from "../components/cadlayout"
 // import Image from "../components/image"
+import "./tejas.css"
 import SEO from "../components/seo"
 import Slider from "react-slick";
 import { Link } from "gatsby"

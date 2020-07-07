@@ -35,7 +35,7 @@ const Extracurriculars = ({show}) => {
 
 
           <div className="circleContainer">
-            <Link to="/CAD">
+            <Link to="/cad">
               <figure className={"flowcusFigure circleFigure circle3D"}>
                 <figcaption className={"projectCaption"}>
                   <p style={{marginTop: "75px"}} className={"extraCaption"}>3D Modeling</p>
