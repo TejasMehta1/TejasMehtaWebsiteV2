@@ -18,7 +18,7 @@ import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
 import ZimpArch from "../images/zimpArch.png"
 import EFRI from "../images/EFRI_group.jpg"
-import "./tejas.css"
+import "../components/tejas.css"
 
 
 import Card from "@material-ui/core/Card"

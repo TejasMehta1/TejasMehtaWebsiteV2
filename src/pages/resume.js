@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import {navigate} from 'gatsby';
 import ResumePDF from "../images/TejasMehtaResume.pdf"
-import "./tejas.css"
+import "../components/tejas.css"
 class IndexPage extends React.Component {
 
   componentDidMount() {

@@ -2,7 +2,7 @@ import React from "react"
 import { navigate } from "gatsby"
 import LeanHeader from "../components/leanheader"
 import SEO from "../components/seo"
-import "./tejas.css"
+import "../components/tejas.css"
 
 const NotFoundPage = () => (
   <React.Fragment>
