@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
           <img src={EFRI}/>
             <div className={"col-2"}>
               <h2>Purpose:</h2>
-              <p>The need for a secure and efficient based encryption is at its peak today as users, hospitals, governments, and corporations are working with increasingly sensitive data. Current methods of encryption are often inefficient, expensive, or insecure.</p>
+              <p>The need for a secure and efficient based encryption is at its peak today as users, hospitals, governments, and corporations are working with increasingly sensitive data. Current methods of encryption are often inefficient, expensive, or insecure</p>
               <p>The goal of this research study was to develop a non-interceptible form of communication utilizing the properties of Anderson Localization and Quantum Tunneling. The effect is that a message is practically undetectable after being sent until it is recieved so there is no scope for interception</p>
             </div>
             <div className={"col-2"}>
@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
                 <p>Authored paper that won 2nd place in the engineering category in the Texas Junior Academy of Science</p>
                 </li>
                 <li>
-                  <p>Bonus: developed <a rel={"noreferrer"} target={"_blank"} href={"http://neogi.unt.edu/"} className={"textLink textLinkLight"}>Research Website</a></p>
+                  <p>Bonus: Developed <a rel={"noreferrer"} target={"_blank"} href={"http://neogi.unt.edu/"} className={"textLink textLinkLight"}>Research Website</a></p>
                 </li>
               </ul>
             </div>
