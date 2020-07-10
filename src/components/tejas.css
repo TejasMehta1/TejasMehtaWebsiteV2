@@ -15,7 +15,6 @@ html,body {
 
 :root{
     --MainThemeColor: #1a237e;
-    --BackgroundUrl: "";
 }
 
 
@@ -305,7 +304,6 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
  }
 
 .headerPictureContainer::before{
-    background-image: var(--BackgroundUrl);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;

@@ -9,11 +9,13 @@ class HeaderContainer extends React.Component {
 
   constructor(props) {
     super(props);
-    let root = document.documentElement;
-    root.style.setProperty('--BackgroundUrl', `url(${uttower})`);
   }
   render() {
     return (
+      <React.Fragment>
+        <style dangerouslySetInnerHTML={{__html: `
+      .headerPictureContainer:before { background-image: url(${uttower}) }
+    `}} />
       <div className="headerPictureContainer">
         <Header siteTitle={this.props.siteTitle}/>
         <CSSTransitionGroup
@@ -26,6 +28,7 @@ class HeaderContainer extends React.Component {
 
         </CSSTransitionGroup>
       </div>
+      </React.Fragment>
     )
   }
 
