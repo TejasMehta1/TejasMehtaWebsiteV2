@@ -21,7 +21,7 @@ import validator from "email-validator"
 // import OrangeWood from '../images/THDOrangeWood.jpg'
 // import THD from "../images/TheHomeDepot.svg"
 // import Zimperium from "../images/zimperiumSecurity.svg"
-// import TejasMehtaResume from "../images/TejasMehtaResume.pdf"
+
 
 const Contact = ({show}) => {
   const [values, setValues] = React.useState({

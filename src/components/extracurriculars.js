@@ -14,12 +14,6 @@ import PhotographyWebP from "../images/photography.webp"
 // import OrangeWood from '../images/THDOrangeWood.jpg'
 // import THD from "../images/TheHomeDepot.svg"
 // import Zimperium from "../images/zimperiumSecurity.svg"
-import TejasMehtaResume from "../images/TejasMehtaResume.pdf"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAppStore } from "@fortawesome/free-brands-svg-icons/faAppStore"
-import { faGooglePlay } from "@fortawesome/free-brands-svg-icons/faGooglePlay"
-import { faGlobe } from "@fortawesome/free-solid-svg-icons/faGlobe"
-import AmazefitIcon from "../images/amazefit.svg"
 // import { Document, Page, pdfjs } from "react-pdf";
 // import 'react-pdf/dist/Page/AnnotationLayer.css';
 
