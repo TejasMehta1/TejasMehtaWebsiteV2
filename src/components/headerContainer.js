@@ -5,22 +5,31 @@ import uttower from "../images/uttower.jpg"
 import { CSSTransitionGroup } from 'react-transition-group'
 // import AnchorLink from "react-anchor-link-smooth-scroll"
 import Attributes from "./attributes" // ES6
+class HeaderContainer extends React.Component {
 
-const HeaderContainer = ({ siteTitle }) => (
-  <div style={{backgroundImage: `url(${uttower})`}} className="headerPictureContainer">
-    <Header siteTitle={siteTitle}/>
-    <CSSTransitionGroup
-      transitionName="example"
-      transitionAppear={true}
-      transitionAppearTimeout={500}
-      transitionEnter={false}
-      transitionLeave={false}>
-      <Attributes></Attributes>
+  constructor(props) {
+    super(props);
+    let root = document.documentElement;
+    root.style.setProperty('--BackgroundUrl', `url(${uttower})`);
+  }
+  render() {
+    return (
+      <div className="headerPictureContainer">
+        <Header siteTitle={this.props.siteTitle}/>
+        <CSSTransitionGroup
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}>
+          <Attributes/>
 
-    </CSSTransitionGroup>
-  </div>
+        </CSSTransitionGroup>
+      </div>
+    )
+  }
 
-)
+}
 
 
 export default HeaderContainer

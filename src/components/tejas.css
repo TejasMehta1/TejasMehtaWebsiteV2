@@ -15,6 +15,7 @@ html,body {
 
 :root{
     --MainThemeColor: #1a237e;
+    --BackgroundUrl: "";
 }
 
 
@@ -295,11 +296,27 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
 
 .headerPictureContainer{
     /*height: 1000vh;*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
     padding-bottom: 5%;
+ }
+
+.headerPictureContainer::before{
+    background-image: var(--BackgroundUrl);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     content: '';
+     height: 100%;
+     left: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     will-change: transform;
+     z-index: -1;
 }
 .mainTitle{
     font-family: 'Quicksand', sans-serif;
