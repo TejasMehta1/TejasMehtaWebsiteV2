@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Contact from "../components/contact"
+import "../components/layout.css"
+import "../components/tejas.css"
 
 const Support = () => {
 
