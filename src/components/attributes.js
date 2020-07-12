@@ -132,7 +132,7 @@ class Attributes extends React.Component {
         <Extracurriculars show={this.state.showExtracurriculars ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
         <ResumeFrame show={this.state.showResume ? "appear" : "disappear"}/>
-        <Contact show={this.state.showContact ? "appear" : "disappear"}/>
+        <Contact description={"You've gotten to know me, now let me get to know you!"} show={this.state.showContact ? "appear" : "disappear"}/>
       </React.Fragment>
     );
 

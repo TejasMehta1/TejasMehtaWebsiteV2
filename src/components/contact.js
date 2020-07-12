@@ -23,7 +23,7 @@ import validator from "email-validator"
 // import Zimperium from "../images/zimperiumSecurity.svg"
 
 
-const Contact = ({show}) => {
+const Contact = ({show, description}) => {
   const [values, setValues] = React.useState({
     name: '',
     email: '',
@@ -88,7 +88,7 @@ const Contact = ({show}) => {
           <Card style={{padding: "50px", textAlign: "center"}}>
         <h1 style={{fontWeight: 600}} id={"contactTitle"}>Let's Get in Touch!</h1>
             <hr className={"smallBlueHR"}/>
-        <p>You've gotten to know me, now let me get to know you!</p>
+        <p>{description}</p>
             <div className={"contactInputDiv dynamicContainer"}>
             <FormControl fullWidth={true} className={"FormControlContact"} variant="outlined">
             <InputLabel className={"contactInputLabel"} htmlFor="outlined-adornment-name">Name</InputLabel>
@@ -174,5 +174,6 @@ const Contact = ({show}) => {
 }
 Contact.propTypes = {
   show: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 export default Contact
