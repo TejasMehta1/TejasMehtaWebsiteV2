@@ -1,5 +1,10 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.iamtejasmehta.portfolio",
-    "sha256_cert_fingerprints": ["83:AD:A8:27:5E:6E:16:57:48:ED:36:BC:8A:8C:B6:85:03:64:A5:ED:2F:30:06:D0:6A:B0:5B:F7:1D:A0:A8:D1"] }
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.iamtejasmehta.portfolio",
+    "sha256_cert_fingerprints": [
+      "7C:A7:FB:EB:BD:A4:CB:E2:CA:44:89:6F:E1:9A:3D:2E:8C:69:1E:09:D1:5D:04:10:55:2C:8D:34:63:03:78:4F"
+    ]
+  }
 }]
