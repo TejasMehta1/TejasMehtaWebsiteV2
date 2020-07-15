@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import CADLayout from "../components/cadlayout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import Slider from "react-slick";
+import Slider from "react-slick"
 import { Link } from "gatsby"
 import LeanHeader from "../components/leanheader"
 import Zimperium from "../images/zimperiumSecurity.svg"
@@ -26,7 +26,7 @@ import Card from "@material-ui/core/Card"
 // import logowhite from "../images/TMLogoCircleWhite.png"
 class IndexPage extends React.Component {
 
-  render(){
+  render() {
     const settings = {
       dots: true,
       infinite: true,
@@ -35,36 +35,41 @@ class IndexPage extends React.Component {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 7500
-    };
+    }
     return (
       // <CADLayout>
       <React.Fragment>
         <LeanHeader/>
-        <div style={{height: "40vh", position: "relative"}} className={"ZimperiumDiv"}>
-          <div style={{
-  backgroundImage: `url(${Zimperium}`,
-  height: "40vh",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "60%",
-  backgroundPosition: "center"
-}}/>
+        <div style={{ height: "40vh", position: "relative" }} className={"ZimperiumDiv"}>
+          {/*<a target={"_blank"} href={"https://zimperium.com/"} rel="noreferrer" aria-label={"Zimperium"}>*/}
+            <div style={{
+              backgroundImage: `url(${Zimperium}`,
+              height: "40vh",
+              padding: "5em",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "calc(30% + 200px)",
+              backgroundPosition: "center"
+            }}/>
+          {/*</a>*/}
           {/*<img className={"centerItem verticallyAlign"} style={{}} src={Zimperium}/>*/}
         </div>
-        <SEO title="Zimperium" />
+        <SEO title="Zimperium"/>
 
 
         {/*<div style={{backgroundColor: "#002054"}}>*/}
-        <div style={{backgroundColor: "rgba(38,0,71,0.98)"}}>
-          <h1 id="zimperiumProjectTitle" className={"projectPageTitle"} style={{fontWeight: 600}}>Project</h1>
+        <div style={{ backgroundColor: "rgba(38,0,71,0.98)" }}>
+          <h1 id="zimperiumProjectTitle" className={"projectPageTitle"} style={{ fontWeight: 600 }}>Project</h1>
           <hr className={"smallWhiteHR"}/>
           <img className={"centerItem"} src={CrystalBall}/>
+          <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>PYTHON (FLASK), HTML, CSS, JAVASCRIPT (JQUERY), SHELL, ANSIBLE, FIREBASE</p>
           <div className={"dynamicContainer"}>
+            <div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>
             <Slider {...settings}>
               <div>
                 <img src={Map}/>
               </div>
               <div>
-               <img src={Multifilter}/>
+                <img src={Multifilter}/>
               </div>
               <div>
                 <img src={VPC}/>
@@ -76,9 +81,11 @@ class IndexPage extends React.Component {
                 <img src={Present2}/>
               </div>
             </Slider>
+            </div>
             <div className={"col-3"}>
-            <h2>Purpose:</h2>
-            <p>Provide a "crystal ball" view into Zimperium's worldwide cloud infrastructure <br/><br/> Displays key information for each VPC including:</p>
+              <h2>Purpose:</h2>
+              <p>Provide a "crystal ball" view into Zimperium's worldwide cloud infrastructure <br/><br/> Displays key
+                information for each VPC including:</p>
               <ul>
                 <li>
                   Location
@@ -92,7 +99,7 @@ class IndexPage extends React.Component {
                 <li>
                   Version
                 </li>
-            </ul>
+              </ul>
             </div>
             <div className={"col-3"}>
               <h2>Target Audience:</h2>
@@ -101,20 +108,26 @@ class IndexPage extends React.Component {
                   <h4>Executives:</h4>
                   <ul>
                     <li>Recieve a macroscopic view on Zimperium's customer base to identify
-                    which regions and VPCs are the most crucial and where to expand next</li>
+                      which regions and VPCs are the most crucial and where to expand next
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <h4>Engineering</h4>
                   <ul>
-                    <li>Easily find crucial endpoints for each VPC for logging, debugging, and testing purposes and find its device breakdown and version</li>
-                    <li>Utilize Crystalball's API to automatically add new VPCs to the website using the deploy tool</li>
+                    <li>Easily find crucial endpoints for each VPC for logging, debugging, and testing purposes and find
+                      its device breakdown and version
+                    </li>
+                    <li>Utilize Crystalball's API to automatically add new VPCs to the website using the deploy tool
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <h4>Sales and Customer Success</h4>
                   <ul>
-                    <li>Find key metrics to advertise regarding Zimperium's success and quickly see Zimperium's most important customers</li>
+                    <li>Find key metrics to advertise regarding Zimperium's success and quickly see Zimperium's most
+                      important customers
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -145,7 +158,7 @@ class IndexPage extends React.Component {
                 </li>
               </ul>
             </div>
-            <br style={{clear:"both"}}></br>
+            <br style={{ clear: "both" }}></br>
             <img src={ZimpArch} alt={"Architecture"}></img>
           </div>
         </div>
@@ -155,4 +168,5 @@ class IndexPage extends React.Component {
   }
 
 }
+
 export default IndexPage

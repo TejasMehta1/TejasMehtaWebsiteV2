@@ -1,5 +1,5 @@
 import React from 'react';
-import {navigate} from 'gatsby';
+import {navigate, Link} from 'gatsby';
 // import Card from '@material-ui/core/Card';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
@@ -19,7 +19,12 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
         <hr className={"smallWhiteHR"}/>
       <div id="HDDivTransition" style={{backgroundImage: `url(${OrangeWood})`}} className={"WorkSlideRightDiv WorkDiv dynamicContainer " + HDShow}>
         <div className={"WorkImageDiv"}>
-      <a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com"><img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/></a>
+          <Link to={"/homedepot"}>
+            <img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/>
+          </Link>
+      {/*<a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com">*/}
+      {/*  <img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/>*/}
+      {/*</a>*/}
         </div>
       <div className="WorkText">
         <h1>Software Engineering Intern</h1>
@@ -37,7 +42,12 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
       <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
       <div id="zimperiumDivTransition" className={"ZimperiumDiv WorkDiv dynamicContainer " + zimpShow}>
         <div className={"WorkImageDiv"}>
-          <a target="_blank" href="https://zimperium.com" rel="noreferrer" aria-label="zimperium.com"><img alt="Zimperium" className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/></a>
+          <Link to="/zimperium"><
+            img alt="Zimperium" className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/>
+          </Link>
+          {/*<a target="_blank" href="https://zimperium.com" rel="noreferrer" aria-label="zimperium.com"><*/}
+          {/*  img alt="Zimperium" className={"WorkPicture transitionFade InvertColors"} src={Zimperium}/>*/}
+          {/*</a>*/}
         </div>
         <div className="WorkText">
           <h1>Software Engineering Intern</h1>
@@ -55,7 +65,12 @@ const Work = ({show, zimpShow, HDShow, UNTShow}) => {
         <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
         <div id="UNTDivTransition" className={"UNTDiv WorkSlideRightDiv WorkDiv dynamicContainer " + UNTShow}>
           <div className={"WorkImageDiv"}>
-            <a target="_blank" href="http://neogi.unt.edu/" rel="noreferrer" aria-label="unt.edu"><img alt="UNT" className={"WorkPicture transitionFade InvertColors"} src={UNT}/></a>
+            <Link to="/research"><
+              img alt="UNT" className={"WorkPicture transitionFade InvertColors"} src={UNT}/>
+            </Link>
+            {/*<a target="_blank" href="http://neogi.unt.edu/" rel="noreferrer" aria-label="unt.edu"><*/}
+            {/*  img alt="UNT" className={"WorkPicture transitionFade InvertColors"} src={UNT}/>*/}
+            {/*</a>*/}
           </div>
           <div className="WorkText">
             <h1>Research Fellow</h1>

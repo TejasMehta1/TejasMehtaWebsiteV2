@@ -316,6 +316,11 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
      will-change: transform;
      z-index: -1;
 }
+
+.slick-slide img{
+    margin-bottom: 0px;
+}
+
 .mainTitle{
     font-family: 'Quicksand', sans-serif;
     /*float: left;*/

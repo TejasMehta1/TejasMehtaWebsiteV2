@@ -32,8 +32,15 @@ class IndexPage extends React.Component {
       <React.Fragment>
         <LeanHeader/>
         <div style={{height: "40vh", position: "relative"}} className={"UNTDiv"}>
-          <div style={{backgroundImage: `url(${UNT}`, height: "40vh", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}></div>
+          {/*<a target={"_blank"} href={"http://neogi.unt.edu/"} rel="noreferrer" aria-label={"EFRI Phononics Lab Website"}>*/}
+          <div style={{
+  backgroundImage: `url(${UNT}`,
+  height: "40vh",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center"
+}}/>
           {/*<img className={"centerItem verticallyAlign"} style={{}} src={Zimperium}/>*/}
+          {/*</a>*/}
         </div>
         <SEO title="Research" />
 
@@ -42,6 +49,8 @@ class IndexPage extends React.Component {
         <div style={{backgroundColor: "rgba(38,0,71,0.98)"}}>
           <h1 className={"projectPageTitle"} style={{fontWeight: 600}}>Research</h1>
           <hr className={"smallWhiteHR"}/>
+          <h2 style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>ANDERSON LOCALIZATION BASED ELECTRONIC ENCRYPTION</h2>
+          <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>MATLAB, IDEALCIRCUIT, PLOTLY, R, RLC CIRCUITS, QUANTUM TUNNELLING, ENCRYPTION</p>
           <div className={"dynamicContainer"}>
           <img src={EFRI}/>
             <div className={"col-2"}>
@@ -59,7 +68,7 @@ class IndexPage extends React.Component {
                 <p>Authored paper that won 2nd place in the engineering category in the Texas Junior Academy of Science</p>
                 </li>
                 <li>
-                  <p>Bonus: Developed <a rel={"noreferrer"} target={"_blank"} href={"http://neogi.unt.edu/"} className={"textLink textLinkLight"}>Research Website</a></p>
+                  <p>Bonus: Developed <a rel={"noreferrer"} target={"_blank"} href={"http://neogi.unt.edu/"} aria-label={"EFRI Phononics Lab Website"} className={"textLink textLinkLight"}>Research Website</a></p>
                 </li>
               </ul>
             </div>

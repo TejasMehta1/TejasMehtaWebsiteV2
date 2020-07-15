@@ -19,33 +19,124 @@ import Map from "../images/Map.png"
 import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
 import ZimpArch from "../images/zimpArch.png"
-import EFRI from "../images/EFRI_group.jpg"
-
-
-import Card from "@material-ui/core/Card"
+import DropdownPic from "../images/dropdown.png"
+import DropdownBlurred from "../images/dropdownBlurred.png"
+import DropdownError from "../images/dropdownError.png"
 // import logo from "../images/TMLogoCircle.png"
 // import logowhite from "../images/TMLogoCircleWhite.png"
 class IndexPage extends React.Component {
 
   render(){
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 7500
+    }
     return (
       // <CADLayout>
       <React.Fragment>
         <LeanHeader/>
         <div style={{height: "40vh", position: "relative", backgroundImage: `url(${OrangeWood})`}}>
-          <div style={{backgroundImage: `url(${HomeDepot}`, height: "40vh", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}></div>
+          <div style={{
+  backgroundImage: `url(${HomeDepot}`,
+  height: "40vh",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center"
+}}/>
           {/*<img className={"centerItem verticallyAlign"} style={{}} src={Zimperium}/>*/}
         </div>
-        <SEO title="Project" />
+        <SEO title="The Home Depot" />
 
 
         {/*<div style={{backgroundColor: "#002054"}}>*/}
-        <div style={{backgroundColor: "rgba(38,0,71,0.98)"}}>
-          <h1 className={"projectPageTitle"} style={{fontWeight: 600}}>Project</h1>
+        {/*<div style={{backgroundColor: "rgba(38,0,71,0.98)"}}>*/}
+        {/*  <h1 className={"projectPageTitle"} style={{fontWeight: 600}}>Project</h1>*/}
+        {/*  <hr className={"smallWhiteHR"}/>*/}
+        {/* <div className={"dynamicContainer"}>*/}
+        {/*  <h1 style={{textAlign: "center", paddingBottom: "40vh"}}> INTERNSHIP IN PROGRESS</h1>*/}
+        {/* </div>*/}
+        {/*</div>*/}
+        <div style={{ backgroundColor: "rgba(38,0,71,0.98)" }}>
+          <h1 id="zimperiumProjectTitle" className={"projectPageTitle"} style={{ fontWeight: 600 }}>Project</h1>
           <hr className={"smallWhiteHR"}/>
-         <div className={"dynamicContainer"}>
-          <h1 style={{textAlign: "center", paddingBottom: "40vh"}}> INTERNSHIP IN PROGRESS</h1>
-         </div>
+          <h2 style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>SELF CHECKOUT: PRO JOB NAME DROPDOWN</h2>
+          <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>REACT, REDUX, JAVA (SPRING), WEBSOCKET, HTML, CSS, JAVASCRIPT, JUNIT, JEST</p>
+          <div className={"dynamicContainer"}>
+            {/*<div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>*/}
+            {/*  <Slider {...settings}>*/}
+            {/*    <div>*/}
+            {/*      <img src={DropdownBlurred}/>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <img src={DropdownError}/>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <img src={DropdownPic}/>*/}
+            {/*    </div>*/}
+            {/*  </Slider>*/}
+            {/*</div>*/}
+            <div className={"col-3"}>
+              <h2>Purpose:</h2>
+              <p>Provide an easy way for Home Depot's Pro Xtra customers to input the job name/address of their transaction (during self-checkout).
+              </p>
+              <p>Pro Xtra is The Home Depot's loyalty program for professional customers. The Home Depot has over 3.4 million Pro Xtra customers responsible for over 40% of their revenue.
+              </p>
+              <p>This feature targets The Home Depot's largest pro xtra customers to help them organize their jobs for accounting and strategy purposes, while making their shoppers' experience quicker, simpler, and more accurate.</p>
+            </div>
+            <div className={"col-3"}>
+              <h2>Target Audience:</h2>
+              <ul>
+                <li>
+                  <h4>Pro Xtra Customers' Accounting Teams:</h4>
+                  <ul>
+                    <li>Allows them easily organize transactions based on different job names or addresses
+                    </li>
+                    <li>
+                      Helps them understand which jobs are costing more
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Professional Contractors (Visiting the store and buying supplies)</h4>
+                  <ul>
+                    <li>Can type a few characters and quickly click on the correct address without having to worry about spelling or formatting
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Pro Xtra Customer's Business Analysts</h4>
+                  <ul>
+                    <li>
+                      Can easily search for transactions by job name/address to understand the items, dates, and quantities for each transaction associated with the job
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div className={"col-3"}>
+              <h2>Key Features:</h2>
+              <ul>
+                <li>
+                  Instant autocomplete based on input
+                </li>
+                <li>
+                 On screen keyboard
+                </li>
+                <li>
+                 Feature flag (only activates feature in some stores)
+                </li>
+                <li>
+                  Phone number recognition (displays job names and activates features depending on the input phone number)
+                </li>
+              </ul>
+            </div>
+            <br style={{ clear: "both" }}></br>
+            {/*<img src={ZimpArch} alt={"Architecture"}></img>*/}
+          </div>
         </div>
       </React.Fragment>
     )
