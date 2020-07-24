@@ -94,13 +94,10 @@ class IndexPage extends React.Component {
                 <li>
                   <h4>Pro Xtra Customers' Accounting Teams:</h4>
                   <ul>
-                    <li>Allows them easily organize transactions based on different job names or addresses
+                    <li>Allows them easily organize transactions based on different job names or addresses and analyze their costs
                     </li>
                     <li>
-                      Ensures that the accounts are consistent and accurate, preventing the inconvience of having to manually reconcile mismatched data
-                    </li>
-                    <li>
-                      Helps them understand which jobs are costing more
+                      Prevents them from having to manually reconcile mismatched job names by ensuring accuracy and consistency
                     </li>
                   </ul>
                 </li>
