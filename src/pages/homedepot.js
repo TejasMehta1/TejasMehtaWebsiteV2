@@ -19,9 +19,9 @@ import Map from "../images/Map.png"
 import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
 import ZimpArch from "../images/zimpArch.png"
-import DropdownPic from "../images/dropdown.png"
-import DropdownBlurred from "../images/dropdownBlurred.png"
-import DropdownError from "../images/dropdownError.png"
+import DropdownSubmit from "../images/submitBlurred.jpg"
+import DropdownBlurred from "../images/autocompleteBlurred.jpg"
+import DropdownError from "../images/errorRed.png"
 // import logo from "../images/TMLogoCircle.png"
 // import logowhite from "../images/TMLogoCircleWhite.png"
 class IndexPage extends React.Component {
@@ -72,10 +72,10 @@ class IndexPage extends React.Component {
             {/*      <img src={DropdownBlurred}/>*/}
             {/*    </div>*/}
             {/*    <div>*/}
-            {/*      <img src={DropdownError}/>*/}
+            {/*      <img src={DropdownSubmit}/>*/}
             {/*    </div>*/}
             {/*    <div>*/}
-            {/*      <img src={DropdownPic}/>*/}
+            {/*      <img src={DropdownError}/>*/}
             {/*    </div>*/}
             {/*  </Slider>*/}
             {/*</div>*/}
@@ -83,10 +83,11 @@ class IndexPage extends React.Component {
               <h2>Purpose:</h2>
               <p>Provide an easy way for Home Depot's Pro Xtra customers to input the job name/address of their transaction (during self-checkout).
               </p>
+              <p>This feature is designed to help Pro Xtra customers organize their jobs with high accuracy for accounting and strategy purposes, while making their shoppers' experience quicker, simpler, and more accurate.</p>
               <p>Pro Xtra is The Home Depot's loyalty program for professional customers. The Home Depot has over 3.4 million Pro Xtra customers responsible for over 40% of their revenue.
               </p>
-              <p>This feature targets The Home Depot's largest pro xtra customers to help them organize their jobs for accounting and strategy purposes, while making their shoppers' experience quicker, simpler, and more accurate.</p>
-            </div>
+              <p>This feature targets The Home Depot's largest Pro Xtra customer: Wedgewood. Wedgewood is responsible for over $12 million of Home Depot's revenue every year</p>
+                   </div>
             <div className={"col-3"}>
               <h2>Target Audience:</h2>
               <ul>
@@ -94,6 +95,9 @@ class IndexPage extends React.Component {
                   <h4>Pro Xtra Customers' Accounting Teams:</h4>
                   <ul>
                     <li>Allows them easily organize transactions based on different job names or addresses
+                    </li>
+                    <li>
+                      Ensures that the accounts are consistent and accurate, preventing the inconvience of having to manually reconcile mismatched data
                     </li>
                     <li>
                       Helps them understand which jobs are costing more
@@ -125,6 +129,9 @@ class IndexPage extends React.Component {
                 </li>
                 <li>
                  On screen keyboard
+                </li>
+                <li>
+                  Guaranteed accuracy of job name entry (no mismatches which database)
                 </li>
                 <li>
                  Feature flag (only activates feature in some stores)
