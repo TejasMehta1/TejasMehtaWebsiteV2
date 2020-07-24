@@ -22,6 +22,7 @@ const About = ({show}) => {
         <p>Hi, I'm a<a className="textLink transitionFade" rel="noreferrer" target="_blank" href="https://csb.utexas.edu"><b>Texas CSB Honors</b> </a>  student at UT Austin majoring in <b>Computer Science, Management, and Business Honors</b> and pursuing an <b>Applied Statistical Modeling</b> certificate.
       </p>
         <p>I am a full stack web and mobile developer. I enjoy creating fast, beautiful, and useful products. I'm especially passionate about mental health and education. </p>
+        <p>When I'm not coding, you can find me hunting for food trucks, lifting weights, or driving down a twisty road. I also really enjoy turning my shower into a concert hall and dancing to bhangra.</p>
         {/*<p>Outside of programming I enjoy singing, dancing, and  develop machine learning curriculum for XLabs</p>*/}
         <div style={{width: "225px"}} className={"container center"}>
         <a target={"_blank"} rel="noreferrer" aria-label={"Github"} href={"https://github.com/TejasMehta1"}><FontAwesomeIcon  className={"socialIcon transitionFade"} icon={faGithub}/></a>
