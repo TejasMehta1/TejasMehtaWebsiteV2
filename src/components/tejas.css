@@ -634,10 +634,10 @@ a.ripple{
 .WorkSlideRightDiv{
 
     border-radius: 4px;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    -webkit-transition: all .55s ease-out;
+    -moz-transition: all .55s ease-out;
+    -o-transition: all .55s ease-out;
+    transition: all .55s ease-out;
 }
 
 
@@ -647,10 +647,10 @@ a.ripple{
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 5px 5px, 0px 0px;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all .55s ease-out;
+    -moz-transition: all .55s ease-out;
+    -o-transition: all .55s ease-out;
+    transition: all .55s ease-out;
 }
 
 .UNTDiv{
