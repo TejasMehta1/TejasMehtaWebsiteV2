@@ -120,9 +120,13 @@ class Attributes extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <h1 className={this.state.showTitle ? "bigTejasMehta appear" : "bigTejasMehta disappear"}> <span id={"hiImTejasMehta"}>HI!</span> <br /> <span id="iamtejasmehta">I'M TEJAS MEHTA</span>
+        <h1 className={this.state.showTitle ? "bigTejasMehta appear" : "bigTejasMehta disappear"}>
+          <span id={"hiImTejasMehta"}>HI!</span>
+          <br />
+          <span id="iamtejasmehta">I'M TEJAS MEHTA</span>
           <br/>
-          <h3 className="tripleDescription">Designer ~ Developer ~ Doer</h3>
+          {/*<h3 className="tripleDescription">Designer ~ Developer ~ Doer</h3>*/}
+          <h3 className="tripleDescription">Full Stack Developer</h3>
           <AnchorLink id="titleAnchor" href="#aboutLocation" className=""><i
             className="material-icons downArrow">keyboard_arrow_down</i></AnchorLink>
         </h1>
