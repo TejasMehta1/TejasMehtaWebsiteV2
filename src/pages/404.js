@@ -10,7 +10,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <div style={{position: "relative", paddingTop: "20vh", height: "100vh", textAlign: "center", color: "white", backgroundColor: "black"}}>
     <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p>You just hit a route that doesn&#39;t exist. Been there </p>
       <button onClick={() => navigate("/")} className={"ripple buttonWhite"}>Return Home</button>
     </div>
   </React.Fragment>

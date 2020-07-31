@@ -64,7 +64,7 @@ class IndexPage extends React.Component {
           <h1 id="zimperiumProjectTitle" className={"projectPageTitle"} style={{ fontWeight: 600 }}>Project</h1>
           <hr className={"smallWhiteHR"}/>
           <h2 style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>SELF CHECKOUT: PRO JOB NAME DROPDOWN</h2>
-          <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>REACT, REDUX, JAVA (SPRING), WEBSOCKET, HTML, CSS, JAVASCRIPT, JUNIT, JEST</p>
+          <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>REACT, REDUX, JAVA (SPRING), WEBSOCKET, HTML, CSS, JAVASCRIPT, JUNIT, CUCUMBER</p>
           <div className={"dynamicContainer"}>
             {/*<div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>*/}
             {/*  <Slider {...settings}>*/}
@@ -86,7 +86,7 @@ class IndexPage extends React.Component {
               <p>This feature is designed to help Pro Xtra customers organize their jobs with high accuracy for accounting and strategy purposes, while making their shoppers' experience quicker, simpler, and more accurate.</p>
               <p>Pro Xtra is The Home Depot's loyalty program for professional customers. The Home Depot has over 3.4 million Pro Xtra customers responsible for over 40% of their revenue.
               </p>
-              <p>This feature targets The Home Depot's largest Pro Xtra customer: Wedgewood. Wedgewood is responsible for over $12 million of Home Depot's revenue every year</p>
+              {/*<p>This feature targets The Home Depot's largest Pro Xtra customer: Wedgewood. Wedgewood is responsible for over $12 million of Home Depot's revenue every year</p>*/}
                    </div>
             <div className={"col-3"}>
               <h2>Target Audience:</h2>
