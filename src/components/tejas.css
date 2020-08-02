@@ -715,6 +715,10 @@ a.ripple{
     animation: crescendo .6s alternate ease-in;
 }
 
+.design.appear img, .design.appear figcaption{
+    animation: crescendo .6s alternate ease-in;
+}
+
 @keyframes crescendo {
     0%   {transform: scale(0);}
     100% {transform: scale(1);}

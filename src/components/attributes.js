@@ -22,6 +22,7 @@ class Attributes extends React.Component {
       showFrontEnd: false,
       showBackEnd: false,
       showDeploymentDB: false,
+      showDesign: false,
       showWork: false,
       showZimperium: false,
       showProjects: false,
@@ -53,6 +54,7 @@ class Attributes extends React.Component {
       let showFrontEnd;
       let showBackEnd;
       let showDeploymentDB;
+      let showDesign
       let showWork;
       let showHD;
       let showUNT;
@@ -67,12 +69,13 @@ class Attributes extends React.Component {
       showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
       showHD = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("projects", 20);
       showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
-      showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 50) && this.showItemBasedOnTopDistance("projects", 20);
+      showUNT = this.showItemBasedOnBottomDistance("UNTDivTransition", 80) && this.showItemBasedOnTopDistance("projects", 20);
       showProjects = this.showItemBasedOnBottomDistance("projects", 150) && this.showItemBasedOnTopDistance("frontEndTitle", 150);
       showExtracurriculars = this.showItemBasedOnBottomDistance("extracurricularsTitle", 100) && this.showItemBasedOnTopDistance("frontEndTitle", 150);
          showFrontEnd = this.showItemBasedOnBottomDistance("frontEndTitle", 20) && this.showItemBasedOnTopDistance("frontEndSkillLine", 0);
           showBackEnd = this.showItemBasedOnBottomDistance("backEndTitle", 50) && this.showItemBasedOnTopDistance("backEndSkillLine", 0);
         showDeploymentDB = this.showItemBasedOnBottomDistance("deploymentDBTitle", 50) && this.showItemBasedOnTopDistance("deploymentDBSkillLine", 0);
+      showDesign = this.showItemBasedOnBottomDistance("designTitle", 50) && this.showItemBasedOnTopDistance("designSkillLine", 0);
         showResume = this.showItemBasedOnBottomDistance("resumeTitle" , 350) && this.showItemBasedOnTopDistance("TejasMehtaResume", -800);
         showContact = this.showItemBasedOnBottomDistance("ContactUs" , 300)
         // console.log(document.getElementById("backEndTitle").getBoundingClientRect().top);
@@ -92,6 +95,7 @@ class Attributes extends React.Component {
         showFrontEnd: showFrontEnd,
         showBackEnd: showBackEnd,
         showDeploymentDB: showDeploymentDB,
+        showDesign: showDesign,
         showWork: showWork,
         showHD: showHD,
         showUNT: showUNT,
@@ -106,9 +110,9 @@ class Attributes extends React.Component {
       let workNavLink = document.getElementById("workNavLink")
       showWork && !(showProjects) ? workNavLink.style.color = "lightblue" : workNavLink.style.color = "white";
       let projectsNavLink = document.getElementById("projectsNavLink");
-      (showProjects) && !(showFrontEnd || showDeploymentDB) ? projectsNavLink.style.color = "lightblue" : projectsNavLink.style.color = "white";
+      (showProjects) && !(showFrontEnd || showDesign) ? projectsNavLink.style.color = "lightblue" : projectsNavLink.style.color = "white";
       let skillsNavLink = document.getElementById("skillsNavLink");
-      (showFrontEnd || showDeploymentDB) && !showResume ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
+      (showFrontEnd || showDesign) && !showResume ? skillsNavLink.style.color = "lightblue" : skillsNavLink.style.color = "white";
       let resumeNavLink = document.getElementById("resumeNavLink");
       (showResume) && !(showContact) ? resumeNavLink.style.color = "lightblue" : resumeNavLink.style.color = "white";
       let contactNavLink = document.getElementById("contactNavLink");
@@ -134,7 +138,7 @@ class Attributes extends React.Component {
         <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"} UNTShow={this.state.showUNT ? "appear" : "disappear"}/>
         <Projects show={this.state.showProjects ? "appear" : "disappear"}/>
         <Extracurriculars show={this.state.showExtracurriculars ? "appear" : "disappear"}/>
-        <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"}/>
+        <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"} showDesign={this.state.showDesign ? "appear" : "disappear"}/>
         <ResumeFrame show={this.state.showResume ? "appear" : "disappear"}/>
         <Contact description={"You've gotten to know me, now let me get to know you!"} show={this.state.showContact ? "appear" : "disappear"}/>
       </React.Fragment>

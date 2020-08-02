@@ -68,8 +68,8 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
               <p>Locally owned and Black owned restaurant discovery service</p>
               <div className={"figureFrameworksLeft"}>
                 {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
-                <FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>
-                <FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>
+                {/*<FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>*/}
+                {/*<FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>*/}
                 <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
               </div>
               <div className={"figureFrameworksRight"}>
@@ -107,7 +107,7 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
 
 
         <div className="projectContainer">
-          <a onClick={() => configureProp("CraveRN", "https://github.com/TejasMehta1/CraveRNWeb", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.crave_rn", "null", "https://craverightnow.com",CraveRNWindow)}>
+          <a onClick={() => configureProp("CraveRN", "https://github.com/TejasMehta1/CraveRNWeb", "https://play.google.com/store/apps/details?id=com.iamtejasmehta.crave_rn", "https://apps.apple.com/ca/app/cravern/id1503092119", "https://craverightnow.com",CraveRNWindow)}>
             <figure className={"projectFigure craveRNFigure"}>
               <figcaption className={"projectCaption"}>
                 <p>Quiz based restaurant discovery service for restaurants nearby</p>

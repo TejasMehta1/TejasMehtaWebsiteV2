@@ -11,12 +11,16 @@ import ReactPic from "../images/react.svg"
 import CSSPic from "../images/css.svg"
 import FlutterPic from "../images/flutter.svg"
 import GCPPic from "../images/gcp.svg"
+import FigmaPic from "../images/figma.svg"
 import PostgreSQLPic from "../images/postgresql.svg"
 import FirebasePic from "../images/firebase.svg"
 import DockerPic from "../images/docker.svg"
+import InkscapePic from "../images/inkscape.svg"
+import CreoPic from "../images/creo.svg"
+import FusionPic from "../images/fusion360.svg"
 import PropTypes from "prop-types"
 // import About from "./about"
-const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB}) => {
+const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB, showDesign}) => {
 
   return(
     <React.Fragment>
@@ -85,9 +89,31 @@ const Skills = ({showFrontEnd , showBackEnd, showDeploymentDB}) => {
             <img alt={"Firebase"} className={"codingLanguage"} src={FirebasePic}/>
             <figcaption className={"codingLanguage"}>Firebase</figcaption>
           </figure>
-          <hr style={{backgroundColor: "transparent"}} className={"skillLine"} id={"deploymentDBSkillLine"}/>
-
+          <br className={"clear"}/>
+          <hr className={"skillLine"} id={"deploymentDBSkillLine"}/>
         </div>
+
+        <h2 className={"quicksand design" + showDesign} id={"designTitle"}>Design</h2>
+        <div className={"design " + showDesign}>
+          <figure className={"codingLanguage"}>
+            <img alt={"Figma"} className={"codingLanguage"} src={FigmaPic}/>
+            <figcaption className={"codingLanguage"}>Figma</figcaption>
+          </figure>
+          <figure className={"codingLanguage"}>
+            <img alt={"Inkscape"} className={"codingLanguage"} src={InkscapePic}/>
+            <figcaption className={"codingLanguage"}>Inkscape</figcaption>
+          </figure>
+          <figure className={"codingLanguage"}>
+            <img alt={"Creo"} className={"codingLanguage"} src={CreoPic}/>
+            <figcaption className={"codingLanguage"}>Creo</figcaption>
+          </figure>
+          <figure className={"codingLanguage"}>
+            <img alt={"Fusion 360"} className={"codingLanguage"} src={FusionPic}/>
+            <figcaption className={"codingLanguage"}>Fusion 360</figcaption>
+          </figure>
+          <hr style={{backgroundColor: "transparent"}} className={"skillLine"} id={"designSkillLine"}/>
+        </div>
+
       </div>
     </React.Fragment>
   )
@@ -97,6 +123,7 @@ Skills.propTypes = {
   showFrontEnd: PropTypes.string.isRequired,
   showBackEnd: PropTypes.string.isRequired,
   showDeploymentDB: PropTypes.string.isRequired,
+  showDesign: PropTypes.string.isRequired,
 }
 
 export default Skills
