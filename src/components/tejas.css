@@ -207,11 +207,7 @@ h1.dynamicContainer, h2.dynamicContainer, h3.dynamicContainer, h4.dynamicContain
     text-shadow: black;
 }
 
-.resumeFrame{
-    width: 100%;
-    height: 70vw;
-    /*height: 1150px;*/
-}
+
 
 .mainHeader{
     background-color: transparent;
@@ -920,6 +916,12 @@ a.ripple{
         width: 23%;
     }
 
+    .resumeFrame{
+        width: 100%;
+        height: 120vw;
+        /*height: 1150px;*/
+    }
+
 }
 
 @media screen and (orientation: landscape){
@@ -945,7 +947,11 @@ a.ripple{
         }
         .disappear.ZimperiumDiv{
             transform: translate(calc(142%),0px);
-
+        }
+        .resumeFrame{
+            width: 100%;
+            height: 100vw;
+            /*height: 1150px;*/
         }
     }
     @media screen and (min-width: 1051px) {
@@ -1101,6 +1107,11 @@ a.ripple{
 
     .appear .circle3D{
         right: calc(100% - 125px - 32.5%);
+    }
+    .resumeFrame{
+        width: 100%;
+        height: 70vw;
+        /*height: 1150px;*/
     }
 }
 
