@@ -69,9 +69,9 @@ class IndexPage extends React.Component {
           <div className={"dynamicContainer"}>
             <div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>
               <Slider {...settings}>
-                <video controls autoPlay>
-                  <source src={DropdownVideo}/>
-                </video>
+                {/*<video controls autoPlay>*/}
+                {/*  <source src={DropdownVideo}/>*/}
+                {/*</video>*/}
                 <div>
                   <img src={DropdownBlurred}/>
                 </div>
