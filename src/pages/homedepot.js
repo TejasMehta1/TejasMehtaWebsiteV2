@@ -18,6 +18,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Map from "../images/Map.png"
 import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
+import DropdownVideo from "../images/ProJobNameDropdown.mp4"
 import ZimpArch from "../images/zimpArch.png"
 import DropdownSubmit from "../images/submitBlurred.jpg"
 import DropdownBlurred from "../images/autocompleteBlurred.jpg"
@@ -33,7 +34,7 @@ class IndexPage extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 7500
     }
     return (
@@ -66,25 +67,29 @@ class IndexPage extends React.Component {
           <h2 style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>SELF CHECKOUT: PRO JOB NAME DROPDOWN</h2>
           <p style={{textAlign: "center", color: "white", fontFamily: "Quicksand, sans-serif"}}>REACT, REDUX, JAVA (SPRING), WEBSOCKET, HTML, CSS, JAVASCRIPT, JUNIT, CUCUMBER</p>
           <div className={"dynamicContainer"}>
-            {/*<div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>*/}
-            {/*  <Slider {...settings}>*/}
-            {/*    <div>*/}
-            {/*      <img src={DropdownBlurred}/>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*      <img src={DropdownSubmit}/>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*      <img src={DropdownError}/>*/}
-            {/*    </div>*/}
-            {/*  </Slider>*/}
-            {/*</div>*/}
+            <div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>
+              <Slider {...settings}>
+                <video controls autoPlay>
+                  <source src={DropdownVideo}/>
+                </video>
+                <div>
+                  <img src={DropdownBlurred}/>
+                </div>
+                <div>
+                  <img src={DropdownSubmit}/>
+                </div>
+                <div>
+                  <img src={DropdownError}/>
+                </div>
+              </Slider>
+            </div>
             <div className={"col-3"}>
               <h2>Purpose:</h2>
               <p>Provide an easy way for Home Depot's Pro Xtra customers to input the job name/address of their transaction (during self-checkout).
               </p>
               <p>This feature is designed to help Pro Xtra customers organize their jobs with high accuracy for accounting and strategy purposes, while making their shoppers' experience quicker, simpler, and more accurate.</p>
-              <p>Pro Xtra is The Home Depot's loyalty program for professional customers. The Home Depot has over 3.4 million Pro Xtra customers responsible for over 40% of their revenue.
+              <p>Pro Xtra is The Home Depot's loyalty program for professional customers. The Home Depot has over 3.4 million Pro Xtra customers responsible for over 40% of their revenue. This feature is being rolled out to The Home
+                Depot's largest Pro corporate account and depending on its success, it will continue rolling out to more Pro customers.
               </p>
               {/*<p>This feature targets The Home Depot's largest Pro Xtra customer: Wedgewood. Wedgewood is responsible for over $12 million of Home Depot's revenue every year</p>*/}
                    </div>
@@ -94,10 +99,11 @@ class IndexPage extends React.Component {
                 <li>
                   <h4>Pro Xtra Customers' Accounting Teams:</h4>
                   <ul>
-                    <li>Allows them easily organize transactions based on different job names or addresses and analyze their costs
-                    </li>
                     <li>
                       Prevents them from having to manually reconcile mismatched job names by ensuring accuracy and consistency
+                    </li>
+
+                    <li>Allows them easily organize transactions based on different job names or addresses and analyze their costs
                     </li>
                   </ul>
                 </li>
@@ -119,8 +125,11 @@ class IndexPage extends React.Component {
               </ul>
             </div>
             <div className={"col-3"}>
-              <h2>Key Features:</h2>
+              <h2>Features + Scope:</h2>
               <ul>
+                <li>
+                  Rolling out to ~50,000 registers in ~2,200 stores around North America
+                </li>
                 <li>
                   Instant autocomplete based on input
                 </li>
