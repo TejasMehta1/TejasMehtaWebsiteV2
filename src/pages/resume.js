@@ -5,8 +5,8 @@ import "../components/tejas.css"
 class IndexPage extends React.Component {
 
   componentDidMount() {
-    window.location = '../TejasMehtaResume.pdf';
-    // navigate('../TejasMehtaResume.pdf');
+    window.location = '../Tejas_Mehta_Resume.pdf';
+    // navigate('../Tejas_Mehta_Resume.pdf');
   }
 
   render(){
