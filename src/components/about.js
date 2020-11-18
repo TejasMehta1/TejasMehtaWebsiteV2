@@ -19,7 +19,7 @@ const About = ({show}) => {
       <img alt="TejasMehtaProfilePic" id="profilePic" src={ProfilePic}/>
       </div>
       <Card className="bioCard">
-        <p>Hi, I'm a<a className="textLink transitionFade" rel="noreferrer" target="_blank" href="https://csb.utexas.edu"><b>Texas CSB Honors</b> </a>  student at UT Austin majoring in <b>Computer Science, Management, and Business Honors</b> and pursuing an <b>Applied Statistical Modeling</b> certificate.
+        <p>Hi, I'm a<a className="textLink transitionFade" rel="noreferrer" target="_blank" href="https://csb.utexas.edu"><b>Texas CSB Honors</b> </a>  student at UT Austin majoring in <b>Computer Science, Finance, and Business Honors</b> and pursuing an <b>Applied Statistical Modeling</b> certificate.
       </p>
         <p>I am a full stack web and mobile developer. I enjoy creating fast, beautiful, and useful products. I'm especially passionate about mental health and education. </p>
         <p>When I'm not coding, you can find me hunting for food trucks, lifting weights, or driving down a twisty road. I also really enjoy turning my shower into a concert hall and dancing to bhangra.</p>
