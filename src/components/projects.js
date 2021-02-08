@@ -25,7 +25,7 @@ import TejasdoitIcon from "../images/tejasdoit.svg"
 import TejasdoitWindow from "../images/TejasdoitWindow.jpg"
 import DroneIcon from "../images/drone.svg"
 import DroneWindow from "../images/DroneDeliveryWindow.png"
-import AmazefitIcon from "../images/amazefit.png"
+import AmazefitIcon from "../images/amazefit.svg"
 import AmazefitWebPIcon from "../images/amazefit.webp"
 // import Layout from "./layout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -260,8 +260,8 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
                 </div>
               </figcaption>
               <picture className={"projectIcon"}>
-                <source srcSet={AmazefitWebPIcon} type="image/webp"/>
-                <source srcSet={AmazefitIcon} type="image/jpeg"/>
+                {/*<source srcSet={AmazefitWebPIcon} type="image/webp"/>*/}
+                {/*<source srcSet={AmazefitIcon} type="image/jpeg"/>*/}
                 <img className={"projectIcon"} src={AmazefitIcon} alt="Amazefit Watchface"/>
               </picture>
             </figure>
