@@ -636,6 +636,15 @@ a.ripple{
     transition: all .55s ease-out;
 }
 
+.WorkSlideLeftDiv{
+
+    border-radius: 4px;
+    -webkit-transition: all .55s ease-out;
+    -moz-transition: all .55s ease-out;
+    -o-transition: all .55s ease-out;
+    transition: all .55s ease-out;
+}
+
 
 
 .ZimperiumDiv{
@@ -898,10 +907,11 @@ a.ripple{
     .disappear.WorkSlideRightDiv{
         transform: translate(calc(-111%),0px);
     }
+    .disappear.WorkSlideLeftDiv{
+        transform: translate(calc(111%),0px);
+    }
     .disappear.ZimperiumDiv{
         transform: translate(calc(111%),0px);
-
-
     }
     #aboutLocation{
         position: absolute;
@@ -945,6 +955,9 @@ a.ripple{
         .disappear.WorkSlideRightDiv{
             transform: translate(calc(-142%),0px);
         }
+        .disappear.WorkSlideLeftDiv{
+            transform: translate(calc(142%),0px);
+        }
         .disappear.ZimperiumDiv{
             transform: translate(calc(142%),0px);
         }
@@ -964,7 +977,9 @@ a.ripple{
         .disappear.WorkSlideRightDiv{
             transform: translate(calc(-200%),0px);
         }
-
+        .disappear.WorkSlideLeftDiv{
+            transform: translate(calc(200%),0px);
+        }
         #extracurricularsTitle{
             margin-top: 100px;
         }

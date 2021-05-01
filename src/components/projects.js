@@ -2,6 +2,8 @@ import React from 'react';
 // import Card from '@material-ui/core/Card';
 // import ProfilePic from "../images/profilePic.jpg"
 import PropTypes from "prop-types"
+import ActivstIcon from "../images/ActivstLogo.svg"
+import ActivstWindow from "../images/ActivstWindow.png"
 import LocoEatsIcon from "../images/LocoEats.svg"
 import LocoEatsWindow from "../images/LocoEatsWindow.png"
 import CSBAIcon from "../images/csbalogo.svg"
@@ -26,6 +28,8 @@ import TejasdoitWindow from "../images/TejasdoitWindow.jpg"
 import DroneIcon from "../images/drone.svg"
 import DroneWindow from "../images/DroneDeliveryWindow.png"
 import AmazefitIcon from "../images/amazefit.svg"
+import TQIGIcon from "../images/TQIGDark.svg"
+import TQIGWindow from "../images/TQIGWindow.png"
 import AmazefitWebPIcon from "../images/amazefit.webp"
 // import Layout from "./layout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -61,8 +65,32 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
       <div style={{overflow: "hidden"}} className={show + " dynamicContainer"}>
         <h1 className={"sectionTitle"} style={{marginTop: "100px"}} id="projects">Projects: </h1>
         <hr className={"smallWhiteHR"}/>
+
+
         <div className="projectContainer">
-          <a onClick={() => configureProp("Loco Eats", "null", "null", "null", "https://locoeats.org",LocoEatsWindow)}>
+          <a onClick={() => configureProp("Activst", "null", "null", "null", "http://activst.org/", ActivstWindow)}>
+            <figure className={"projectFigure flowcusFigure"}>
+              <figcaption className={"projectCaption"}>
+                <p>Link based philanthropy platform for social media activists</p>
+                <div className={"figureFrameworksLeft"}>
+                  {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
+                  {/*<FontAwesomeIcon className={"faPlatform"} icon={faAppStore}/>*/}
+                  {/*<FontAwesomeIcon className={"faPlatform"} icon={faGooglePlay}/>*/}
+                  <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
+                </div>
+                <div className={"figureFrameworksRight"}>
+                  {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
+                  <h3 className={"faLanguage"}>ReactJS, NodeJS, Firestore, GCP</h3>
+                </div>
+              </figcaption>
+              <img className={"projectIcon"} src={ActivstIcon} alt="ActivstIcon" />
+            </figure>
+          </a>
+        </div>
+
+
+        <div className="projectContainer">
+          <a onClick={() => configureProp("LocoEats", "null", "null", "null", "https://locoeats.org",LocoEatsWindow)}>
           <figure className={"projectFigure locoEatsFigure"}>
             <figcaption className={"projectCaption"}>
               <p>Locally owned and Black owned restaurant discovery service</p>
@@ -142,6 +170,25 @@ const Projects = ({show, zimpShow, HDShow, UNTShow}) => {
                 </div>
               </figcaption>
               <img className={"projectIcon"} src={CSBAIcon} alt="CSBAIcon" />
+            </figure>
+          </a>
+        </div>
+
+        <div className="projectContainer">
+          <a onClick={() => configureProp("TQIG", "null", "null", "null", "https://texasqig.org", TQIGWindow)}>
+            <figure className={"projectFigure locoEatsFigure"}>
+              <figcaption className={"projectCaption"}>
+                <p>Texas Quantitative Investment Group</p>
+                <div className={"figureFrameworksLeft"}>
+                  {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
+                  <FontAwesomeIcon className={"faPlatform"} icon={faGlobe}/>
+                </div>
+                <div className={"figureFrameworksRight"}>
+                  {/*<FontAwesomeIcon icon={faAppStoreIos}/>*/}
+                  <h3 className={"faLanguage"}>Jamstack, Stackbit, ReactJS</h3>
+                </div>
+              </figcaption>
+              <img className={"projectIcon"} src={TQIGIcon} alt="TQIGIcon" />
             </figure>
           </a>
         </div>
