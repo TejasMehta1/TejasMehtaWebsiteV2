@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Map from "../images/Map.png"
 import Multifilter from "../images/Multifilter.png"
 import VPC from "../images/VPC.png"
-import DropdownVideo from "../images/ProJobNameDropdown.mp4"
+import DropdownVideo from "../images/HomeDepotDemo.mp4"
 import ZimpArch from "../images/zimpArch.png"
 import DropdownSubmit from "../images/submitBlurred.jpg"
 import DropdownBlurred from "../images/autocompleteBlurred.jpg"
@@ -69,9 +69,9 @@ class IndexPage extends React.Component {
           <div className={"dynamicContainer"}>
             <div style={{marginBottom: "1.45rem"}} className={"slickSliderDiv"}>
               <Slider {...settings}>
-                {/*<video controls autoPlay>*/}
-                {/*  <source src={DropdownVideo}/>*/}
-                {/*</video>*/}
+                <video controls autoPlay>
+                  <source src={DropdownVideo}/>
+                </video>
                 <div>
                   <img src={DropdownBlurred}/>
                 </div>
