@@ -10,7 +10,7 @@ import "../components/tejas.css"
 import Slider from "react-slick";
 import { Link } from "gatsby"
 import LeanHeader from "../components/leanheader"
-import Slack from "../images/Slack_RGB_White.svg"
+import Contrary from "../images/contrary.svg"
 import OrangeWood from "../images/THDOrangeWood.jpg"
 import CrystalBall from "../images/CrystalBall.svg"
 import "slick-carousel/slick/slick.css"
@@ -41,9 +41,9 @@ class IndexPage extends React.Component {
       // <CADLayout>
       <React.Fragment>
         <LeanHeader/>
-        <div style={{height: "40vh", position: "relative", backgroundColor: "#4A154B"}}>
+        <div style={{height: "40vh", position: "relative", backgroundColor: "#3165fe"}}>
           <div style={{
-            backgroundImage: `url(${Slack}`,
+            backgroundImage: `url(${Contrary}`,
             height: "40vh",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
           }}/>
           {/*<img className={"centerItem verticallyAlign"} style={{}} src={Zimperium}/>*/}
         </div>
-        <SEO title="Slack" />
+        <SEO title="Contrary" />
 
 
         {/*<div style={{backgroundColor: "#002054"}}>*/}

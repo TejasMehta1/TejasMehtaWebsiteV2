@@ -13,7 +13,10 @@ import Zimperium from "../images/zimperiumSecurity.svg"
 import UNT from "../images/unt.svg"
 import KanarysLogo from "../images/kanarys-logo-white.svg"
 import Slack from "../images/Slack_RGB_White.svg"
-const Work = ({show, zimpShow, HDShow, UNTShow, kanShow, slackShow}) => {
+import Amazon from "../images/amazon.svg"
+import Google from "../images/google.svg"
+import Contrary from "../images/contrary.svg"
+const Work = ({show, zimpShow, HDShow, UNTShow, kanShow, slackShow, amazonShow, contraryShow, googleShow}) => {
 
   return(
     <React.Fragment>
@@ -21,6 +24,69 @@ const Work = ({show, zimpShow, HDShow, UNTShow, kanShow, slackShow}) => {
       <h1 id="workExperience" className={"dynamicContainer sectionTitle"}>Work Experience: </h1>
         <hr className={"smallWhiteHR"}/>
 
+
+        <div id="GoogleDivTransition" style={{backgroundColor: "#ffffff"}} className={"WorkSlideLeftDiv WorkDiv dynamicContainer " + googleShow}>
+          <div className={"WorkImageDiv"}>
+            <Link to={"/google"}>
+              <img alt={"Google"} className={"WorkPicture transitionFade InvertColors"} style={{}} src={Google}/>
+            </Link>
+            {/*<a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com">*/}
+            {/*  <img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/>*/}
+            {/*</a>*/}
+          </div>
+          <div style={{filter: "invert(1)"}} className="WorkText">
+            <h1>Associate Product Manager Intern</h1>
+            <h3>May 2022 - August 2022</h3>
+            <h3 className={"JobDescription"}>Phone By Google</h3>
+            <div className={"centerButtonMobile"}>
+              <button onClick={() => navigate('/google')} aria-label="project" className="ripple buttonWhite">Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
+
+        <div id="ContraryDivTransition" style={{backgroundColor: "#3165FE"}} className={"WorkSlideRightDiv WorkDiv dynamicContainer " + contraryShow}>
+          <div className={"WorkImageDiv"}>
+            <Link to={"/contrary"}>
+              <img alt={"Contrary"} className={"WorkPicture transitionFade InvertColors"} style={{}} src={Contrary}/>
+            </Link>
+            {/*<a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com">*/}
+            {/*  <img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/>*/}
+            {/*</a>*/}
+          </div>
+          <div className="WorkText">
+            <h1>Venture Partner</h1>
+            <h3>October 2021 - Present</h3>
+            <h3 className={"JobDescription"}>UT Pod</h3>
+            <div className={"centerButtonMobile"}>
+              <button onClick={() => navigate('/contrary')} aria-label="project" className="ripple buttonWhite">Work</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
+
+        <div id="AmazonDivTransition" style={{backgroundColor: "#232F3E"}} className={"WorkSlideLeftDiv WorkDiv dynamicContainer " + amazonShow}>
+          <div className={"WorkImageDiv"}>
+            <Link to={"/amazon"}>
+              <img alt={"Amazon"} className={"WorkPicture transitionFade InvertColors"} style={{}} src={Amazon}/>
+            </Link>
+            {/*<a target="_blank" href="https://www.homedepot.com/" rel="noreferrer" aria-label="homedepot.com">*/}
+            {/*  <img alt={"The Home Depot"} className={"WorkPicture transitionFade InvertColors"} src={THD}/>*/}
+            {/*</a>*/}
+          </div>
+          <div className="WorkText">
+            <h1>Software Development Intern</h1>
+            <h3>August 2021 - October 2021</h3>
+            <h3 className={"JobDescription"}>AWS AI</h3>
+            <div className={"centerButtonMobile"}>
+              <button onClick={() => navigate('/amazon')} aria-label="project" className="ripple buttonWhite">Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={"dynamicContainer"}> <hr className={"skillLine"}/> </div>
 
         <div id="SlackDivTransition" style={{backgroundColor: "#4A154B"}} className={"WorkSlideRightDiv WorkDiv dynamicContainer " + slackShow}>
           <div className={"WorkImageDiv"}>
@@ -34,7 +100,7 @@ const Work = ({show, zimpShow, HDShow, UNTShow, kanShow, slackShow}) => {
           <div className="WorkText">
             <h1>Software Engineering Intern</h1>
             <h3>May 2021 - August 2021</h3>
-            <h3 className={"JobDescription"}>Interop</h3>
+            <h3 className={"JobDescription"}>Files</h3>
             <div className={"centerButtonMobile"}>
               <button onClick={() => navigate('/slack')} aria-label="project" className="ripple buttonWhite">Project</button>
             </div>

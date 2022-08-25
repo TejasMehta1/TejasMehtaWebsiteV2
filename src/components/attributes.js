@@ -24,6 +24,9 @@ class Attributes extends React.Component {
       showDeploymentDB: false,
       showDesign: false,
       showWork: false,
+      showGoogle: false,
+      showContrary: false,
+      showAmazon: false,
       showSlack: false,
       showKanarys: false,
       showHD: false,
@@ -59,6 +62,9 @@ class Attributes extends React.Component {
       let showDeploymentDB;
       let showDesign
       let showWork;
+      let showGoogle;
+      let showContrary;
+      let showAmazon;
       let showSlack;
       let showKanarys;
       let showHD;
@@ -72,7 +78,10 @@ class Attributes extends React.Component {
          showTitle = this.showItemBasedOnTopDistance("hiImTejasMehta",20);
          showBio = this.showItemBasedOnBottomDistance("profilePic", window.innerHeight*.5) && this.showItemBasedOnTopDistance("workExperience",250);
       showWork = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
-      showSlack = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("projects", 20);
+      showGoogle = this.showItemBasedOnBottomDistance("workExperience", 450) && this.showItemBasedOnTopDistance("skillsLocation", 20);
+      showContrary = this.showItemBasedOnBottomDistance("ContraryDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
+      showAmazon = this.showItemBasedOnBottomDistance("AmazonDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
+      showSlack = this.showItemBasedOnBottomDistance("SlackDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
       showKanarys = this.showItemBasedOnBottomDistance("KanDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
       showHD = this.showItemBasedOnBottomDistance("HDDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
       showZimperium = this.showItemBasedOnBottomDistance("zimperiumDivTransition", 150) && this.showItemBasedOnTopDistance("projects", 20);
@@ -104,6 +113,9 @@ class Attributes extends React.Component {
         showDeploymentDB: showDeploymentDB,
         showDesign: showDesign,
         showWork: showWork,
+        showGoogle: showGoogle,
+        showContrary: showContrary,
+        showAmazon: showAmazon,
         showSlack: showSlack,
         showKanarys: showKanarys,
         showHD: showHD,
@@ -144,7 +156,7 @@ class Attributes extends React.Component {
             className="material-icons downArrow">keyboard_arrow_down</i></AnchorLink>
         </h1>
         <About show={this.state.showBio ? "appear" : "disappear"}/>
-        <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"} UNTShow={this.state.showUNT ? "appear" : "disappear"} kanShow={this.state.showKanarys ? "appear" : "disappear"} slackShow={this.state.showSlack ? "appear" : "disappear"} />
+        <Work show={this.state.showWork ? "appear" : "disappear"} zimpShow={this.state.showZimperium ? "appear" : "disappear"} HDShow={this.state.showHD ? "appear" : "disappear"} UNTShow={this.state.showUNT ? "appear" : "disappear"} kanShow={this.state.showKanarys ? "appear" : "disappear"} slackShow={this.state.showSlack ? "appear" : "disappear"} amazonShow={this.state.showAmazon ? "appear" : "disappear"} contraryShow={this.state.showContrary ? "appear" : "disappear"} googleShow={this.state.showGoogle ? "appear" : "disappear"}/>
         <Projects show={this.state.showProjects ? "appear" : "disappear"}/>
         <Extracurriculars show={this.state.showExtracurriculars ? "appear" : "disappear"}/>
         <Skills showFrontEnd={this.state.showFrontEnd ? "appear" : "disappear"} showBackEnd={this.state.showBackEnd ? "appear" : "disappear"} showDeploymentDB={this.state.showDeploymentDB ? "appear" : "disappear"} showDesign={this.state.showDesign ? "appear" : "disappear"}/>
